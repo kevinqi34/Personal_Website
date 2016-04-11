@@ -1,0 +1,59 @@
+
+body {
+  margin: 0;
+  padding: 0;
+
+
+}
+
+#head {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+
+
+}
+
+#head p {
+  position: relative;
+  font-size: 20px;
+  font-weight: 100;
+  margin-left: 25px;
+  margin-right: 25px;
+  display: inline-block;
+
+
+}
+#head p:hover {
+  border-bottom: 3px solid #707070;
+  font-size: 22px;
+
+
+}
+
+#portfolio, #contact {
+  display: none;
+
+
+
+}
+
+
+
+h2 {
+  text-align: center;
+  font-size: 120px;
+  font-weight: 100;
+  line-height: 120px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 250px;
+  height: 130px;
+
+}
