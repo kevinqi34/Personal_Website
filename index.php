@@ -52,6 +52,7 @@ Have skills? Contact ME!
 <title>KQI</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<link rel="icon" href="./pics/favicon.ico" type="image/x-icon" />
 <?php include_once("./analytics.php") ?>
 
 </head>
