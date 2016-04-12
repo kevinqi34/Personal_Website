@@ -53,7 +53,7 @@ Have skills? Contact ME!
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
 <link rel="icon" href="./pics/favicon.ico" type="image/x-icon" />
-<?php include_once("./analytics.php") ?>
+<?php include_once("./php/analytics.php") ?>
 
 </head>
 
@@ -69,13 +69,34 @@ Have skills? Contact ME!
 
 <div id="home">
   <h2>KQI</h2>
+
 </div>
 
 <div id="portfolio">
+<?php include("./php/portfolio.php") ?>
 
 </div>
 
 <div id="contact">
+  <div id="me">
+    <img class="round" src="./pics/me.jpg" />
+
+    
+  </div>
+
+
+  <form action="contact_me.php" method="post">
+
+    <input type="text" name="Name" placeholder="Name">
+    <input type="text" name="Email" placeholder="Email">
+    <textarea placeholder="What's up?" name="content"></textarea>
+    <input type="submit" value="Submit">
+
+
+
+  </form>
+
+
 
 </div>
 

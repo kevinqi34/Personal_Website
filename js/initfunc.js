@@ -1,4 +1,27 @@
 
+function resizeContent() {
+
+      var w = (window.innerWidth) * 0.9;
+          tiles = Math.floor(w/324);
+          nwidth = tiles * 324 + 2;
+
+
+
+      $('#portfolio').css("width", nwidth);
+
+
+      $(window).on("load resize",function(e){
+          resizeContent();
+
+
+      });
+
+
+
+
+  }
+
+
 
 function page_status() {
   var a = ($("#home").css("display") == "block") + "::home";

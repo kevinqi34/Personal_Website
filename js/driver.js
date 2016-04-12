@@ -2,11 +2,13 @@
 
 
 $(document).ready( function() {
+
+
   // navbar
   $("body").on("click",function() {
     page_status();
   });
-
+  resizeContent();
   fireworks();
   page_status();
   change_pg("home");
