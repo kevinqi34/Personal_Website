@@ -22,6 +22,29 @@ function resizeContent() {
   }
 
 
+  function redirect(id, location, type) {
+
+    if (type == "tab") {
+      $('#' + id).click(function(){
+        window.open(location, '_blank');
+      });
+    }else{
+      $('#' + id).click(function(){
+       window.location.href= location;
+      })
+
+    }
+
+
+
+
+
+
+  }
+
+
+
+
 
 function page_status() {
   var a = ($("#home").css("display") == "block") + "::home";

@@ -44,6 +44,7 @@ Have skills? Contact ME!
   <script src="./js/driver.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700,300' rel='stylesheet' type='text/css'>
   <link href="./css/index.css" rel="stylesheet" type="text/css" />
+  <link href="./css/rotation.css" rel="stylesheet" type="text/css" />
 
 
 
@@ -80,13 +81,16 @@ Have skills? Contact ME!
 <div id="contact">
   <div id="me">
     <img class="round" src="./pics/me.jpg" />
+    <img class="orbit" id="insta" src="./pics/instagram.png" />
+    <img class="orbit" id="linked" src="./pics/linkedin.png" />
+    <img class="orbit" id="fb" src="./pics/facebook.png" />
 
-    
+
   </div>
 
 
   <form action="contact_me.php" method="post">
-
+    <p>Shoot me an Email</p>
     <input type="text" name="Name" placeholder="Name">
     <input type="text" name="Email" placeholder="Email">
     <textarea placeholder="What's up?" name="content"></textarea>
