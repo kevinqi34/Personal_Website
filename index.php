@@ -60,6 +60,28 @@ Have skills? Contact ME!
 
 <body>
 
+
+<?php
+  $msg = "";
+
+  if ($_GET['err']) {
+    $msg = $_GET['err'];
+
+  }else if ($_GET['msg']){
+
+    $msg = $_GET['msg'];
+  }
+
+
+  if ($msg) {
+?>
+  <script> $(document).ready( function() { contact_submit(); }); </script>
+
+<?php
+  }
+?>
+
+
 <div id="head">
   <p id="home_p">Home</p>
   <p id="portfolio_p">Portfolio</p>
@@ -89,12 +111,14 @@ Have skills? Contact ME!
   </div>
 
 
-  <form action="contact_me.php" method="post">
+  <form action="./php/contact_me.php" method="post">
     <p>Shoot me an Email</p>
-    <input type="text" name="Name" placeholder="Name">
-    <input type="text" name="Email" placeholder="Email">
-    <textarea placeholder="What's up?" name="content"></textarea>
+    <input type="text" name="Name" placeholder="Name" value="<?php echo htmlspecialchars($_GET['Name']); ?>">
+    <input type="text" name="Email" placeholder="Email" value="<?php echo htmlspecialchars($_GET['Email']); ?>">
+    <textarea placeholder="What's up?" name="Content"></textarea>
     <input type="submit" value="Submit">
+
+    <?php if ($msg) { echo '<p class="msg">' . $msg . '</p>'; } ?>
 
 
 

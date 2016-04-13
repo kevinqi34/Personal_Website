@@ -15,10 +15,10 @@
 
 
 #me #linked {
-  -webkit-animation: orbit2 6s linear infinite; /* Chrome, Safari 5 */
-     -moz-animation: orbit2 6s linear infinite; /* Firefox 5-15 */
-       -o-animation: orbit2 6s linear infinite; /* Opera 12+ */
-          animation: orbit2 6s linear infinite; /* Chrome, Firefox 16+,
+  -webkit-animation: orbit2 11s linear infinite; /* Chrome, Safari 5 */
+     -moz-animation: orbit2 11s linear infinite; /* Firefox 5-15 */
+       -o-animation: orbit2 11s linear infinite; /* Opera 12+ */
+          animation: orbit2 11s linear infinite; /* Chrome, Firefox 16+,
                                                    IE 10+, Safari 5 */
 
 

@@ -235,50 +235,6 @@ div.port:hover div.text {
 }
 
 
-#me img.orbit {
-  width: 40px;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  left: 0;
-  top: 130px;
-
-
-     -webkit-animation: orbit2 4s linear infinite; /* Chrome, Safari 5 */
-      -moz-animation: orbit2 4s linear infinite; /* Firefox 5-15 */
-        -o-animation: orbit2 4s linear infinite; /* Opera 12+ */
-           animation: orbit2 4s linear infinite; /* Chrome, Firefox 16+,
-                                                    IE 10+, Safari 5 */
-
-
-
-
-
-
-
-}
-
-
-@-webkit-keyframes orbit2 {
-	from { 	-webkit-transform: rotate(0deg) translateX(100px) rotate(0deg); }
-	to   {  -webkit-transform: rotate(360deg) translateX(100px) rotate(-360deg); }
-}
-
-@-moz-keyframes orbit2 {
-	from { 	-moz-transform: rotate(0deg) translateX(100px) rotate(0deg); }
-	to   {  -moz-transform: rotate(360deg) translateX(100px) rotate(-360deg); }
-}
-
-@-o-keyframes orbit2 {
-	from { 	-o-transform: rotate(0deg) translateX(100px) rotate(0deg); }
-	to   {  -o-transform: rotate(360deg) translateX(100px) rotate(-360deg); }
-}
-
-@keyframes orbit2 {
-	from { 	transform: rotate(0deg) translateX(100px) rotate(0deg); }
-	to   {  transform: rotate(360deg) translateX(100px) rotate(-360deg); }
-}
 
 
 
@@ -304,6 +260,18 @@ div.port:hover div.text {
   font-size: 22px;
   font-weight: 100;
   border-bottom: 2px solid #404040;
+
+
+
+}
+
+
+#contact form p.msg {
+  width: 100%;
+  color: red;
+  margin-top: 20px;
+  border-bottom: none;
+  font-size: 18px;
 
 
 

@@ -140,3 +140,14 @@ function fire(number) {
 
 
 }
+
+
+
+function contact_submit() {
+  $("#home").css("display","none");
+  $("#contact").css("display","block");
+  $("#portfolio").css("display","none");
+
+
+
+}
