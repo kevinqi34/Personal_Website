@@ -22,6 +22,7 @@ $(document).ready( function() {
   redirect ('insta', 'https://www.instagram.com/kqi345/', 'tab');
   redirect ('linked', 'https://www.linkedin.com/in/kevin-qi-78a82a9b', 'tab');
   redirect ('fb', 'https://www.facebook.com/kevin.qi.71', 'tab');
+  redirect ('git', 'https://github.com/kevinqi34', 'tab');
 
 
 

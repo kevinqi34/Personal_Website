@@ -148,6 +148,10 @@ function contact_submit() {
   $("#contact").css("display","block");
   $("#portfolio").css("display","none");
 
+  $("#home_p").css("border-bottom","none");
+  $("#portfolio_p").css("border-bottom","none");
+  $("#contact_p").css({"border-bottom":"3px solid #707070","font-size":"22px"});
+
 
 
 }

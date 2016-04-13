@@ -106,6 +106,7 @@ Have skills? Contact ME!
     <img class="orbit" id="insta" src="./pics/instagram.png" />
     <img class="orbit" id="linked" src="./pics/linkedin.png" />
     <img class="orbit" id="fb" src="./pics/facebook.png" />
+    <img class="orbit" id="git" src="./pics/github.png" />
 
 
   </div>
