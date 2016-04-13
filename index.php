@@ -53,12 +53,9 @@ Have skills? Contact ME!
 <title>KQI</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
-<<<<<<< HEAD
 <meta charset="UTF-8">
 <meta name="description" content="Contact me, KQI. I'm a web developer, entrepreneur and basketball player. Book me for your next project.">
 <meta name="keywords" content="Kevin Qi, KQI, KQI34, Kevin Web Developer">
-=======
->>>>>>> b2e9bd48fad120c2f996d936aa720cd29ca1ffad
 <link rel="icon" href="./pics/favicon.ico" type="image/x-icon" />
 <?php include_once("./php/analytics.php") ?>
 
