@@ -15,10 +15,10 @@
 
 
 #me #linked {
-  -webkit-animation: orbit1 5s linear 1; /* Chrome, Safari 5 */
-     -moz-animation: orbit1 5s linear 1; /* Firefox 5-15 */
-       -o-animation: orbit1 5s linear 1; /* Opera 12+ */
-          animation: orbit1 5s linear 1; /* Chrome, Firefox 16+,
+  -webkit-animation: orbit1 3s linear 1; /* Chrome, Safari 5 */
+     -moz-animation: orbit1 3s linear 1; /* Firefox 5-15 */
+       -o-animation: orbit1 3s linear 1; /* Opera 12+ */
+          animation: orbit1 3s linear 1; /* Chrome, Firefox 16+,
                                                    IE 10+, Safari 5 */
 
         -webkit-animation-fill-mode: forwards;
@@ -32,14 +32,14 @@
 #me #insta {
 
 
-   -webkit-animation: orbit2 10s linear infinite; /* Chrome, Safari 5 */
-      -moz-animation: orbit2 10s linear infinite; /* Firefox 5-15 */
-        -o-animation: orbit2 10s linear infinite; /* Opera 12+ */
-           animation: orbit2 10s linear infinite; /* Chrome, Firefox 16+,
+   -webkit-animation: orbit2 3s linear infinite; /* Chrome, Safari 5 */
+      -moz-animation: orbit2 3s linear infinite; /* Firefox 5-15 */
+        -o-animation: orbit2 3s linear infinite; /* Opera 12+ */
+           animation: orbit2 3s linear infinite; /* Chrome, Firefox 16+,
                                                     IE 10+, Safari 5 */
 
 
-
+          -webkit-animation-fill-mode: forwards;
 
 
 }
@@ -90,4 +90,26 @@
 @keyframes orbit1 {
 	from { 	transform: rotate(0deg) translateX(120px) rotate(0deg); }
 	to   {  transform: rotate(90deg) translateX(120px) rotate(-90deg); }
+}
+
+
+
+@-webkit-keyframes orbit2 {
+	from { 	-webkit-transform: rotate(0deg) translateX(120px) rotate(0deg); }
+	to   {  -webkit-transform: rotate(180deg) translateX(120px) rotate(-180deg); }
+}
+
+@-moz-keyframes orbit2 {
+	from { 	-moz-transform: rotate(0deg) translateX(120px) rotate(0deg); }
+	to   {  -moz-transform: rotate(180deg) translateX(120px) rotate(-180deg); }
+}
+
+@-o-keyframes orbit2 {
+	from { 	-o-transform: rotate(0deg) translateX(120px) rotate(0deg); }
+	to   {  -o-transform: rotate(180deg) translateX(120px) rotate(-180deg); }
+}
+
+@keyframes orbit2 {
+	from { 	transform: rotate(0deg) translateX(120px) rotate(0deg); }
+	to   {  transform: rotate(180deg) translateX(120px) rotate(-180deg); }
 }
