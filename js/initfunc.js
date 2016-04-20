@@ -3,7 +3,7 @@ function resizeContent() {
 
       var w = (window.innerWidth);
 
-        if (w > 320) {
+        if (w > 400) {
           tiles = Math.floor(w/324);
           nwidth = tiles * 324 + 2;
         }else {
