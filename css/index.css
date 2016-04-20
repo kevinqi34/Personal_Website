@@ -328,6 +328,12 @@ div.port:hover div.text {
 
 }
 
+#portfolio {
+  margin-top: 0;
+  margin-left: calc(50% - 128px);
+
+
+}
 
 
 
