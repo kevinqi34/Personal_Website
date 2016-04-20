@@ -330,7 +330,6 @@ div.port:hover div.text {
 
 #portfolio {
   margin-top: 0;
-  margin-left: calc(50% - 128px);
 
 
 }
@@ -339,6 +338,7 @@ div.port:hover div.text {
 
 div.port {
   width: 250px;
+  margin: 0;
 
 
 
