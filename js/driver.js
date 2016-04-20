@@ -29,7 +29,7 @@ $(document).ready( function() {
 
 
 // portfolio
-$(document).on("load resize",function(e){
+$(window).on("load resize",function(e){
     resizeContent();
 
 
