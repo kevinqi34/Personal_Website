@@ -105,11 +105,11 @@ Have skills? Contact ME!
 
 <div id="contact">
   <div id="me">
-    <img class="round" src="./pics/me.jpg" />
-    <img class="orbit" id="insta" src="./pics/instagram.png" />
-    <img class="orbit" id="linked" src="./pics/linkedin.png" />
-    <img class="orbit" id="fb" src="./pics/facebook.png" />
-    <img class="orbit" id="git" src="./pics/github.png" />
+    <img class="round" title="Me" src="./pics/me.jpg" />
+    <img class="orbit" title="Follow me on Instagram" id="insta" src="./pics/instagram.png" />
+    <img class="orbit" title="Connect with me on LinkedIn" id="linked" src="./pics/linkedin.png" />
+    <img class="orbit" title="Add me on Facebook" id="fb" src="./pics/facebook.png" />
+    <img class="orbit" title="Follow me on Github" id="git" src="./pics/github.png" />
 
 
   </div>
