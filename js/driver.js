@@ -10,7 +10,6 @@ $(document).ready( function() {
   });
 
 
-  resizeContent();
   fireworks();
   page_status();
   change_pg("home");
@@ -24,6 +23,14 @@ $(document).ready( function() {
   redirect ('fb', 'https://www.facebook.com/kevin.qi.71', 'tab');
   redirect ('git', 'https://github.com/kevinqi34', 'tab');
 
+
+
+});
+
+
+// portfolio
+$(window).on("load resize",function(e){
+    resizeContent();
 
 
 });

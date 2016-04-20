@@ -2,20 +2,23 @@
 function resizeContent() {
 
       var w = (window.innerWidth);
+
+        if (w > 320) {
           tiles = Math.floor(w/324);
           nwidth = tiles * 324 + 2;
-          console.log(w);
+        }else {
+          tiles = Math.floor(w/250);
+          nwidth = tiles * 254 + 2;
+
+
+        }
 
 
       $('#portfolio').css("width", nwidth);
 
 
 
-      $(window).on("load resize",function(e){
-          resizeContent();
 
-
-      });
 
 
 
