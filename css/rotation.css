@@ -37,7 +37,8 @@
         -o-animation: orbit2 10s linear infinite; /* Opera 12+ */
            animation: orbit2 10s linear infinite; /* Chrome, Firefox 16+,
                                                     IE 10+, Safari 5 */
-          translateX(120px);                                          
+
+           -webkit-transform: translateX(120px);                                          
 
 
 
