@@ -15,13 +15,13 @@
 
 
 #me #linked {
-  -webkit-animation: orbit2 2s linear 1; /* Chrome, Safari 5 */
-     -moz-animation: orbit2 2s linear 1; /* Firefox 5-15 */
-       -o-animation: orbit2 2s linear 1; /* Opera 12+ */
-          animation: orbit2 2s linear 1; /* Chrome, Firefox 16+,
+  -webkit-animation: orbit1 5s linear 1; /* Chrome, Safari 5 */
+     -moz-animation: orbit1 5s linear 1; /* Firefox 5-15 */
+       -o-animation: orbit1 5s linear 1; /* Opera 12+ */
+          animation: orbit1 5s linear 1; /* Chrome, Firefox 16+,
                                                    IE 10+, Safari 5 */
 
-        -webkit-animation-fill-mode: forwards; 
+        -webkit-animation-fill-mode: forwards;
 
 
 }
@@ -72,22 +72,22 @@
 }
 
 
-@-webkit-keyframes orbit2 {
+@-webkit-keyframes orbit1 {
 	from { 	-webkit-transform: rotate(0deg) translateX(120px) rotate(0deg); }
-	to   {  -webkit-transform: rotate(360deg) translateX(120px) rotate(-360deg); }
+	to   {  -webkit-transform: rotate(90deg) translateX(120px) rotate(-90deg); }
 }
 
-@-moz-keyframes orbit2 {
+@-moz-keyframes orbit1 {
 	from { 	-moz-transform: rotate(0deg) translateX(120px) rotate(0deg); }
 	to   {  -moz-transform: rotate(360deg) translateX(120px) rotate(-360deg); }
 }
 
-@-o-keyframes orbit2 {
+@-o-keyframes orbit1 {
 	from { 	-o-transform: rotate(0deg) translateX(120px) rotate(0deg); }
 	to   {  -o-transform: rotate(360deg) translateX(120px) rotate(-360deg); }
 }
 
-@keyframes orbit2 {
+@keyframes orbit1 {
 	from { 	transform: rotate(0deg) translateX(120px) rotate(0deg); }
 	to   {  transform: rotate(360deg) translateX(120px) rotate(-360deg); }
 }
