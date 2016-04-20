@@ -21,7 +21,7 @@
           animation: orbit2 2s linear 1; /* Chrome, Firefox 16+,
                                                    IE 10+, Safari 5 */
 
-
+        -webkit-animation-fill-mode: forwards; 
 
 
 }
@@ -38,7 +38,7 @@
            animation: orbit2 10s linear infinite; /* Chrome, Firefox 16+,
                                                     IE 10+, Safari 5 */
 
-           -webkit-transform: translateX(120px);                                          
+
 
 
 
