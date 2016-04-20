@@ -38,7 +38,7 @@
                  $form_error ="Name should be between 3-30 letters.";
                }
            // check if name only contains letters and whitespace
-           if (!preg_match("/^[a-zA-Z \.]*$/",$name)) {
+           if (!preg_match("/^[a-zA-Z \.]*$/",$name_input)) {
              $form_error = "Only letters and white space allowed.";
            }
 
@@ -62,7 +62,7 @@
       } else {
         // check if e-mail address is well-formed
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-          echo $email;
+        //  echo $email;
           $form_error = "Invalid email format.";
 
         }
@@ -83,10 +83,14 @@
 
     if ($continue) {
 
+       $msg = test_input($msg);
 
       if (empty($msg)) {
          $form_error = "A message is required.";
        }
+
+
+
        if ($form_error != "") {
          $continue = false;
        }

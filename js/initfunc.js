@@ -1,13 +1,14 @@
 
 function resizeContent() {
 
-      var w = (window.innerWidth) * 0.9;
+      var w = (window.innerWidth);
           tiles = Math.floor(w/324);
           nwidth = tiles * 324 + 2;
-
+          console.log(w);
 
 
       $('#portfolio').css("width", nwidth);
+
 
 
       $(window).on("load resize",function(e){
