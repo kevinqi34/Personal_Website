@@ -337,6 +337,10 @@ div.port:hover div.text {
 
 
 
+}
+
+@media (max-width: 256px) {
+
 div.port {
   width: 250px;
   margin: 0;
