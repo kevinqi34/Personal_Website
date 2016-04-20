@@ -46,24 +46,25 @@
 
 #me #fb {
 
-  -webkit-animation: orbit3 8s linear infinite; /* Chrome, Safari 5 */
-     -moz-animation: orbit3 8s linear infinite; /* Firefox 5-15 */
-       -o-animation: orbit3 8s linear infinite; /* Opera 12+ */
-          animation: orbit3 8s linear infinite; /* Chrome, Firefox 16+,
+  -webkit-animation: orbit3 3s linear 1; /* Chrome, Safari 5 */
+     -moz-animation: orbit3 3s linear 1; /* Firefox 5-15 */
+       -o-animation: orbit3 3s linear 1; /* Opera 12+ */
+          animation: orbit3 3s linear 1; /* Chrome, Firefox 16+,
                                                    IE 10+, Safari 5 */
 
-
+        -webkit-animation-fill-mode: forwards;
 
 }
 
 
 #me #git {
 
-  -webkit-animation: orbit4 7s linear infinite; /* Chrome, Safari 5 */
-     -moz-animation: orbit4 7s linear infinite; /* Firefox 5-15 */
-       -o-animation: orbit4 7s linear infinite; /* Opera 12+ */
-          animation: orbit4 7s linear infinite; /* Chrome, Firefox 16+,
+  -webkit-animation: orbit4 7s linear 1; /* Chrome, Safari 5 */
+     -moz-animation: orbit4 7s linear 1; /* Firefox 5-15 */
+       -o-animation: orbit4 7s linear 1; /* Opera 12+ */
+          animation: orbit4 7s linear 1; /* Chrome, Firefox 16+,
                                                    IE 10+, Safari 5 */
+          -webkit-animation-fill-mode: forwards;
 
 
           width: 33px;
@@ -112,4 +113,48 @@
 @keyframes orbit2 {
 	from { 	transform: rotate(0deg) translateX(120px) rotate(0deg); }
 	to   {  transform: rotate(180deg) translateX(120px) rotate(-180deg); }
+}
+
+
+@-webkit-keyframes orbit3 {
+	from { 	-webkit-transform: rotate(0deg) translateX(120px) rotate(0deg); }
+	to   {  -webkit-transform: rotate(270deg) translateX(120px) rotate(-270deg); }
+}
+
+@-moz-keyframes orbit3 {
+	from { 	-moz-transform: rotate(0deg) translateX(120px) rotate(0deg); }
+	to   {  -moz-transform: rotate(270deg) translateX(120px) rotate(-270deg); }
+}
+
+@-o-keyframes orbit3 {
+	from { 	-o-transform: rotate(0deg) translateX(120px) rotate(0deg); }
+	to   {  -o-transform: rotate(270deg) translateX(120px) rotate(-270deg); }
+}
+
+@keyframes orbit3 {
+	from { 	transform: rotate(0deg) translateX(120px) rotate(0deg); }
+	to   {  transform: rotate(270deg) translateX(120px) rotate(-270deg); }
+}
+
+
+
+
+@-webkit-keyframes orbit4 {
+	from { 	-webkit-transform: rotate(0deg) translateX(120px) rotate(0deg); }
+	to   {  -webkit-transform: rotate(360deg) translateX(120px) rotate(-360deg); }
+}
+
+@-moz-keyframes orbit4 {
+	from { 	-moz-transform: rotate(0deg) translateX(120px) rotate(0deg); }
+	to   {  -moz-transform: rotate(360deg) translateX(120px) rotate(-360deg); }
+}
+
+@-o-keyframes orbit4 {
+	from { 	-o-transform: rotate(0deg) translateX(120px) rotate(0deg); }
+	to   {  -o-transform: rotate(360deg) translateX(120px) rotate(-360deg); }
+}
+
+@keyframes orbit4 {
+	from { 	transform: rotate(0deg) translateX(120px) rotate(0deg); }
+	to   {  transform: rotate(360deg) translateX(120px) rotate(-360deg); }
 }
