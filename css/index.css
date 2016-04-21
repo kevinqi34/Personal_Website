@@ -339,7 +339,7 @@ div.port:hover div.text {
 
 div.port {
   width: 250px;
-  margin: 0;
+  margin: calc(50% - 125px);
   margin-top: 10px;
   margin-bottom: 10px;
 
