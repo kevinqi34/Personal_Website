@@ -338,8 +338,8 @@ div.port:hover div.text {
 
 
 div.port {
-  width: 260px;
-  margin: calc(50% - 130px);
+  width: 240px;
+  margin: calc(50% - 120px);
   margin-top: 10px;
   margin-bottom: 10px;
 
