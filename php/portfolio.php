@@ -43,7 +43,7 @@ $info = array(
       'Name' => "Mike&E's",
       'Pic' => './pics/mike.png',
       'Link' => 'http://www.mikeandes.com',
-      'Dis' => '<p>Created an online prescence for a local 6 month old restaurant. Using Jekyll and SASS, I built a custom design with the goal of converting visitors to restaurant patrons.</p>
+      'Dis' => '<p>Created an online presence for a local 6 month old restaurant. Using Jekyll and SASS, I built a custom design with the goal of converting visitors to restaurant patrons.</p>
                 <p>Made with HTML and SCSS</p>'
 
 
