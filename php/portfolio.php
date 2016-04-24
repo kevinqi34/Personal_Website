@@ -50,7 +50,7 @@ $info = array(
   )
 );
 
-for ($i = 0; $i < 5; $i++) {
+for ($i = 0; $i < $info.length; $i++) {
 
 ?>
   <a href="<?php echo $info[$i]['Link'] ?>">
