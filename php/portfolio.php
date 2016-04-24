@@ -38,7 +38,16 @@ $info = array(
                <p>Since I was a kid, I have always dreamed of having a job that involves gaming, Flash Pilot is my oppurtunity.</p>
                <p>It is a PHP driven gaming portal that I plan on renovating and using as a launchpad to promote my own brand of mobile games, as soon as I have time to build them.</p>'
 
-   )
+   ),
+   4 => array (
+      'Name' => "Mike&E's",
+      'Pic' => './pics/mike.png',
+      'Link' => 'http://www.mikeandes.com',
+      'Dis' => '<p>Created an online prescence for a local 6 month old restaurant. Using Jekyll and SASS, I built a custom design with the goal of converting visitors to restaurant patrons.</p>
+                <p>Made with HTML and SCSS</p>'
+
+
+  )
 );
 
 for ($i = 0; $i < 4; $i++) {
