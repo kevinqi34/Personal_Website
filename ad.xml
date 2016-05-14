@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+	<ModulePrefs title="site adsense gadget" height="100">
+  <Require feature="dynamic-height"/>
+
+	</ModulePrefs>
+
+  	<UserPref
+		  name="client"
+		  required="true"
+		  datatype="string"
+		  display_name="enter client id (looks like ca-pub-xxxxxxxxx)"
+		  default_value="ca-pub-"/>
+
+  	  <UserPref
+  		name="slot"
+  		required="true"
+  		datatype="string"
+  		display_name="ad slot"
+  		default_value="1234567890"/>
+
+  	<Content type="html">
+  	<![CDATA[
+
+
+
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle" id="ins"
+        style="display:block;"
+        data-ad-client=""
+        data-ad-slot=""
+        data-format="auto">
+    </ins>
+
+    <script type="text/javascript">
+
+        function showAd() {
+
+            var width = 280,height = 300;
+
+            // pick up the gadgets dimensions
+            if (gadgets.window) {
+                var viewport = gadgets.window.getViewportDimensions();
+                if (viewport.width) {
+                    width = viewport.width;
+                }
+                if (viewport.height) {
+                    height = viewport.height;
+                }
+            }
+
+            var prefs = new gadgets.Prefs();
+            // get the ad block
+            var ins = document.getElementById("ins");
+
+            ins.style.width = width;
+            ins.style.height = height;
+            ins.setAttribute("data-ad-client", prefs.getString("client"));
+            ins.setAttribute("data-ad-slot", prefs.getString("slot"));
+            (adsbygoogle = window.adsbygoogle || []).push({});
+
+			ins.addEventListener ("load", function () {
+				// when element loads, get its height and adjust the gadget height to match
+				adjustHeight (e);
+			}, false);
+
+
+            function getHeight (e) {
+       		    return e.offsetHeight;
+		    }
+
+		    function adjustHeight (e) {
+		        gadgets.window.adjustHeight(getHeight(e));
+		    }
+
+        }
+
+
+        // kick the thing off
+	    gadgets.util.registerOnLoadHandler(showAd);
+
+    </script>
+
+
+  ]]>
+  </Content>
+</Module>
