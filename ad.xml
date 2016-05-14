@@ -67,7 +67,7 @@
  </script>
 ]]>
 </Content>
-=======
+
 <Module>
 	<ModulePrefs title="site adsense gadget" height="100">
   <Require feature="dynamic-height"/>
