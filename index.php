@@ -88,6 +88,7 @@ Have skills? Contact ME!
 <div id="head">
   <p id="home_p">Home</p>
   <p id="portfolio_p">Portfolio</p>
+  <p id="about_p">About</p>
   <p id="contact_p">Contact</p>
 
 
