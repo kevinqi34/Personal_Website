@@ -4,7 +4,7 @@ require_once './google-api-php-client/src/Google/autoload.php';
 session_start();
 
 $client = new Google_Client();
-$client->setAuthConfigFile('./kqi_data_key.json');
+$client->setAuthConfigFile('./KQI_DATA_DEV.json');
 $client->addScope(Google_Service_Analytics::ANALYTICS_READONLY);
 
 

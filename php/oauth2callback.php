@@ -7,7 +7,7 @@ session_start();
 // Create the client object and set the authorization configuration
 // from the client_secrets.json you downloaded from the Developers Console.
 $client = new Google_Client();
-$client->setAuthConfigFile('../kqi_data_key.json');
+$client->setAuthConfigFile('../KQI_DATA_DEV.json');
 $client->setRedirectUri('http://' . $_SERVER['HTTP_HOST'] . '/oauth2callback.php');
 $client->addScope(Google_Service_Analytics::ANALYTICS_READONLY);
 
