@@ -1,9 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<?php session_start(); ?>
-
-
+<?php include("./php/get_analytics_data.php") ?>
 
 <!-- Signature -->
 <script>
@@ -110,7 +108,7 @@ Have skills? Contact ME!
 
 
 <div id="about">
-<?php include("./php/get_analytics_data.php") ?>
+
 
 
 
