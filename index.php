@@ -1,6 +1,10 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<?php session_start(); ?>
+
+
+
 <!-- Signature -->
 <script>
 //![CDATA[
