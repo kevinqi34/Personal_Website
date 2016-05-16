@@ -17,12 +17,6 @@ function resizeContent() {
       $('#portfolio').css("width", nwidth);
 
 
-
-
-
-
-
-
   }
 
 

@@ -109,10 +109,6 @@ Have skills? Contact ME!
 
 
 
-
-
-
-
 </div>
 
 
