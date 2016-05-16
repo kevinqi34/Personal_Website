@@ -12,7 +12,7 @@ $client->addScope(Google_Service_Analytics::ANALYTICS_READONLY);
 // else redirect to ask the user to authorize access to Google Analytics.
 if (isset($_SESSION['access_token']) && $_SESSION['access_token']) {
 
-  echo "Hello";
+  
   // Set the access token on the client.
   $client->setAccessToken($_SESSION['access_token']);
 

@@ -1,8 +1,7 @@
 <!DOCTYPE HTML>
 <html>
-<head>
 <?php include("./php/get_analytics_data.php") ?>
-
+<head>
 <!-- Signature -->
 <script>
 //![CDATA[
