@@ -54,7 +54,8 @@ function page_status() {
   var a = ($("#home").css("display") == "block") + "::home";
   var b = ($("#portfolio").css("display") == "block") + "::portfolio";
   var c = ($("#contact").css("display") == "block") + "::contact";
-  var status = [a,b,c];
+  var d = ($("#about").css("display") == "block") + "::about";
+  var status = [a,b,c,d];
 
   for (var i = 0; i < status.length; i++) {
     var stat = status[i];
