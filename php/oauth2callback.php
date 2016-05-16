@@ -1,8 +1,10 @@
 <?php
-require_once './google-api-php-client/src/Google/autoload.php';
+require_once '../google-api-php-client/src/Google/autoload.php';
 
 // Start a session to persist credentials.
 session_start();
+
+echo "hello";
 
 // Create the client object and set the authorization configuration
 // from the client_secrets.json you downloaded from the Developers Console.
