@@ -74,7 +74,7 @@ function page_status() {
 
 function change_pg(page) {
 
-  var pages = ["home", "portfolio", "contact"];
+  var pages = ["home", "portfolio", "contact", "about"];
     $("#" + page + "_p").click(function(){
 
       for (var i = 0; i < pages.length; i++) {

@@ -15,6 +15,7 @@ $(document).ready( function() {
   change_pg("home");
   change_pg("portfolio");
   change_pg("contact");
+  change_pg("about");
 
   //social media
 
