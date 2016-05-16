@@ -103,6 +103,19 @@ Have skills? Contact ME!
 
 </div>
 
+
+<div id="about">
+
+
+
+
+
+
+
+</div>
+
+
+
 <div id="contact">
   <div id="me">
     <img class="round" title="Me" src="./pics/me.jpg" />
@@ -131,6 +144,8 @@ Have skills? Contact ME!
 
 
 </div>
+
+
 
 
 

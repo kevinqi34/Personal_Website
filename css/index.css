@@ -33,18 +33,19 @@ body {
 
 }
 
-#portfolio, #contact {
+#portfolio, #contact, #about {
   display: none;
 
 
 
 }
 
-#home, #contact{
+#home, #contact, #about{
   position: absolute;
   top: 60px;
   height: calc(100% - 60px);
   width: 100%;
+  border: 1px solid black;
 
 }
 
