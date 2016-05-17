@@ -113,6 +113,6 @@ function printResults($results) {
 $analytics = getService();
 $profile = getFirstProfileId($analytics);
 $results = getResults($analytics, $profile);
-echo printResults($results);
+printResults($results);
 
 ?>
