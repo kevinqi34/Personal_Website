@@ -2,7 +2,7 @@
 /**
  * Load Google API library
  */
-require_once '../google-api-php-client/src/Google/autoload.php';
+require_once './google-api-php-client/src/Google/autoload.php';
 
 /**
  * Start session to store auth data
@@ -14,7 +14,7 @@ session_start();
  */
 $google_account = array(
   'email'   => 'kqi-data@kqi-analytics-dashboard.iam.gserviceaccount.com',
-  'key'     => file_get_contents( '../kqi_data_key.p12' ),
+  'key'     => file_get_contents( './kqi_data_key.p12' ),
   'profile' => '100743134'
 );
 
@@ -25,7 +25,7 @@ function getService( $service_account_email, $key ) {
   // Creates and returns the Analytics service object.
 
   // Load the Google API PHP Client Library.
-  require_once '../google-api-php-client/src/Google/autoload.php';
+  require_once './google-api-php-client/src/Google/autoload.php';
 
   // Create and configure a new client object.
   $client = new Google_Client();
