@@ -1,6 +1,6 @@
 <?php
 
-echo "hello";
+
 
 function getService()
 {
@@ -112,6 +112,7 @@ function printResults($results) {
   }
 }
 
+echo "hello";
 $analytics = getService();
 $profile = getFirstProfileId($analytics);
 $results = getResults($analytics, $profile);
