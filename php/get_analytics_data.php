@@ -46,6 +46,9 @@ function getService( $service_account_email, $key ) {
   return $analytics;
 }
 
+echo "hello";
+
+
 /**
  * Get Analytics API instance
  */
@@ -67,6 +70,8 @@ $results = $analytics->data_ga->get(
     'sort'        => '-ga:sessions',
     'max-results' => 20
   ) );
+
+
 $rows = $results->getRows();
 
 /**
