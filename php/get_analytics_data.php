@@ -33,7 +33,7 @@ if (isset($_SESSION['access_token']) && $_SESSION['access_token']) {
 }
 
 
-function getReport(&$analytics) {
+function getReport($analytics) {
 
   // Replace with your view ID. E.g., XXXX.
   $VIEW_ID = "<UA-61741997-1>";
@@ -59,7 +59,7 @@ function getReport(&$analytics) {
   return $analytics->reports->batchGet( $body );
 }
 
-function printResults(&$reports) {
+function printResults($reports) {
   for ( $reportIndex = 0; $reportIndex < count( $reports ); $reportIndex++ ) {
     $report = $reports[ $reportIndex ];
     $header = $report->getColumnHeader();
