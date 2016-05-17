@@ -20,9 +20,11 @@ if (isset($_SESSION['access_token']) && $_SESSION['access_token']) {
   // Create an authorized analytics service object.
   $analytics = new Google_Service_Analyticsreporting($client);
 
-  print_r($analytics);
+
   // Call the Analytics Reporting API V4.
   $response = getReport($analytics);
+
+  print_r($response);
 
   // Print the response.
   printResults($response);
