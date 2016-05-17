@@ -86,7 +86,6 @@ if (isset($_SESSION['access_token']) && $_SESSION['access_token']) {
 
   // Print the response.
   printResults($response);
-  echo "Hello";
 
 } else {
   $redirect_uri = 'http://' . $_SERVER['HTTP_HOST'] . '/php/oauth2callback.php';
