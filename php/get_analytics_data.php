@@ -34,7 +34,6 @@ function getReport($analytics) {
   $body = new Google_Service_Analyticsreporting_GetReportsRequest();
   $body->setReportRequests( array( $request) );
 
-  print_r($body);
   return $analytics->reports->batchGet( $body );
 }
 
