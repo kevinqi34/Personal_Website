@@ -1,5 +1,7 @@
 <?php
 
+echo "hello";
+
 function getService()
 {
   // Creates and returns the Analytics service object.
@@ -114,6 +116,6 @@ $analytics = getService();
 $profile = getFirstProfileId($analytics);
 $results = getResults($analytics, $profile);
 printResults($results);
-echo "hello";
+
 
 ?>
