@@ -8,33 +8,6 @@ $client->setAuthConfigFile('./KQI_DATA_DEV.json');
 $client->addScope(Google_Service_Analytics::ANALYTICS_READONLY);
 
 
-// If the user has already authorized this app then get an access token
-// else redirect to ask the user to authorize access to Google Analytics.
-if (isset($_SESSION['access_token']) && $_SESSION['access_token']) {
-
-
-  // Set the access token on the client.
-  $client->setAccessToken($_SESSION['access_token']);
-
-
-  // Create an authorized analytics service object.
-  $analytics = new Google_Service_Analyticsreporting($client);
-
-
-  // Call the Analytics Reporting API V4.
-  $response = getReport($analytics);
-
-  print_r($response);
-
-  // Print the response.
-  printResults($response);
-
-} else {
-  $redirect_uri = 'http://' . $_SERVER['HTTP_HOST'] . '/php/oauth2callback.php';
-  header('Location: ' . filter_var($redirect_uri, FILTER_SANITIZE_URL));
-}
-
-
 function getReport($analytics) {
 
   // Replace with your view ID. E.g., XXXX.
@@ -89,5 +62,35 @@ function printResults($reports) {
     }
   }
 }
+
+
+// If the user has already authorized this app then get an access token
+// else redirect to ask the user to authorize access to Google Analytics.
+if (isset($_SESSION['access_token']) && $_SESSION['access_token']) {
+
+
+  // Set the access token on the client.
+  $client->setAccessToken($_SESSION['access_token']);
+
+
+  // Create an authorized analytics service object.
+  $analytics = new Google_Service_Analyticsreporting($client);
+
+
+  // Call the Analytics Reporting API V4.
+  $response = getReport($analytics);
+
+  print_r($response);
+
+  // Print the response.
+  printResults($response);
+
+} else {
+  $redirect_uri = 'http://' . $_SERVER['HTTP_HOST'] . '/php/oauth2callback.php';
+  header('Location: ' . filter_var($redirect_uri, FILTER_SANITIZE_URL));
+}
+
+
+
 
 ?>
