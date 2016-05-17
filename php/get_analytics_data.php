@@ -34,8 +34,10 @@ function getService()
     $client->getAuth()->refreshTokenWithAssertion($cred);
   }
 
-  return $analytics;
   print_r($analytics);
+
+  return $analytics;
+
 }
 
 function getFirstprofileId($analytics) {
