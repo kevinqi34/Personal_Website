@@ -68,7 +68,6 @@ $results = $analytics->data_ga->get(
     'max-results' => 20
   ) );
 $rows = $results->getRows();
-var_dump($rows);
 
 /**
  * Format and output data as JSON
