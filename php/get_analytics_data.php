@@ -70,5 +70,7 @@ $results = $analytics->data_ga->get(
 $rows = $results->getRows();
 var_dump($rows);
 
+print_r($rows);
+
 
 ?>
