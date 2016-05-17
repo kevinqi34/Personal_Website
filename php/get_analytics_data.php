@@ -16,10 +16,10 @@ if (isset($_SESSION['access_token']) && $_SESSION['access_token']) {
   // Set the access token on the client.
   $client->setAccessToken($_SESSION['access_token']);
 
-  print_r($client);
+
   // Create an authorized analytics service object.
   $analytics = new Google_Service_Analyticsreporting($client);
-
+  print_r($client);
   // Call the Analytics Reporting API V4.
   $response = getReport($analytics);
 
