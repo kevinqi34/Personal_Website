@@ -19,7 +19,7 @@ if (isset($_SESSION['access_token']) && $_SESSION['access_token']) {
 
   // Create an authorized analytics service object.
   $analytics = new Google_Service_Analyticsreporting($client);
-  
+
   print_r($analytics);
   // Call the Analytics Reporting API V4.
   $response = getReport($analytics);
@@ -36,7 +36,7 @@ if (isset($_SESSION['access_token']) && $_SESSION['access_token']) {
 function getReport(&$analytics) {
 
   // Replace with your view ID. E.g., XXXX.
-  $VIEW_ID = "<REPLACE_WITH_VIEW_ID>";
+  $VIEW_ID = "<UA-61741997-1>";
 
   // Create the DateRange object.
   $dateRange = new Google_Service_Analyticsreporting_DateRange();
