@@ -16,7 +16,7 @@ function getReport($analytics) {
 
   // Create the DateRange object.
   $dateRange = new Google_Service_Analyticsreporting_DateRange();
-  $dateRange->setStartDate("7daysAgo");
+  $dateRange->setStartDate("30daysAgo");
   $dateRange->setEndDate("today");
 
   // Create the Metrics object.
