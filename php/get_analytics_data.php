@@ -11,14 +11,15 @@ $client->addScope(Google_Service_Analytics::ANALYTICS_READONLY);
 // If the user has already authorized this app then get an access token
 // else redirect to ask the user to authorize access to Google Analytics.
 if (isset($_SESSION['access_token']) && $_SESSION['access_token']) {
-  echo $_SESSION['access_token'];
-  
+
 
   // Set the access token on the client.
   $client->setAccessToken($_SESSION['access_token']);
 
+
   // Create an authorized analytics service object.
   $analytics = new Google_Service_Analyticsreporting($client);
+  echo $analytics;
 
   // Call the Analytics Reporting API V4.
   $response = getReport($analytics);
