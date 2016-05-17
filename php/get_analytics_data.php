@@ -17,10 +17,10 @@ function getService()
   $client->setApplicationName("HelloAnalytics");
   $analytics = new Google_Service_Analytics($client);
 
-  print_r($analytics);
 
   // Read the generated client_secrets.p12 key.
   $key = file_get_contents($key_file_location);
+  echo $key;
   $cred = new Google_Auth_AssertionCredentials(
       $service_account_email,
       array(Google_Service_Analytics::ANALYTICS_READONLY),
