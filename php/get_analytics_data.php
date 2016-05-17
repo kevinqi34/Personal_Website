@@ -27,9 +27,9 @@ function getService()
       $key
   );
 
-  print_r($cred);
-  $client->setAssertionCredentials($cred);
 
+  $client->setAssertionCredentials($cred);
+  print_r($client);
   if($client->getAuth()->isAccessTokenExpired()) {
     $client->getAuth()->refreshTokenWithAssertion($cred);
   }
