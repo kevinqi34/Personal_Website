@@ -112,11 +112,12 @@ function printResults($results) {
   }
 }
 
-echo "hello";
+
 $analytics = getService();
 $profile = getFirstProfileId($analytics);
 $results = getResults($analytics, $profile);
 printResults($results);
+echo "hello";
 
 
 ?>
