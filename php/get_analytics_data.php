@@ -34,9 +34,7 @@ function getReport($analytics) {
   $body = new Google_Service_Analyticsreporting_GetReportsRequest();
   $body->setReportRequests( array( $request) );
 
-
-  return $analytics->reports;
-  //return $analytics->reports->batchGet( $body );
+  return $analytics->reports->batchGet( $body );
 }
 
 function printResults($reports) {
@@ -85,7 +83,7 @@ if (isset($_SESSION['access_token']) && $_SESSION['access_token']) {
   // Call the Analytics Reporting API V4.
   $response = getReport($analytics);
 
-  print_r($response);
+  echo "hello";
 
   // Print the response.
   printResults($response);
