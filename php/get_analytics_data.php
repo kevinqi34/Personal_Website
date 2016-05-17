@@ -46,7 +46,7 @@ function getService( $service_account_email, $key ) {
   return $analytics;
 }
 
-echo "hello";
+
 
 
 /**
@@ -56,6 +56,8 @@ $analytics = getService(
   $google_account[ 'email' ],
   $google_account[ 'key' ]
 );
+
+echo "hello";
 
 /**
  * Query the Analytics data
