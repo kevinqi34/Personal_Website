@@ -1,1 +1,12 @@
-{"installed":{"client_id":"100876340446617847753","project_id":"vital-program-131316","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://accounts.google.com/o/oauth2/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs"}}
+{
+  "type": "service_account",
+  "project_id": "vital-program-131316",
+  "private_key_id": "ff05945583a7cba2e91faf10d2d2361b1535c97f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCYwn/X2Qr3sBTT\nMwXM8AxgexvJDaUxkz/Qug6XflxLMLAR3tn1wIhY7u+zKqJyqYrnHJHGeoZLTKF+\n3+5qwL99maylWr/xDg4ztDVVVEjnTRD3P+8gsEC2rrEfUX98chF+heWj/PKfsvCy\nOWqCBVgs4T5CLDkdsIs+A7R1q9ecnUCu9r3m6rSFBt0puk5aIMU4zFF14seq8ScW\n7JpuN4Ih+MI3zOiNi75HPMbeDN8H2xsqUeiSd5B0Bhg++4Z2Lzgm1lIZ5ywA4949\nsTQV8xtaLm2tVM2S5SQhZox/uJiqmAk243hp+0qdE4JSqx5gqqi7Dk4ikaN0MZfU\n5e9XUJXdAgMBAAECggEAVxKmpHZG1iA7/paau9Ioe+YwVE2+159DRMqI/rk8Cm/a\nLJWGT5pLHcY0Q0AOEKWrU0jpnuTAH7Oyagtibt8nR4SM8EPmHJUSa05RCC5ez9kR\nzp1WxJ8yg+7Xby6ZKGospp3T48GO2pC4uh4YI7zAIfTR9A4ZEF9NPzAFcP1ejRoD\n+HIbUihFG4qrHCuScn/10JdJ8awRuGuuFJRRL+OFQBppZWxFzxDkZN4MPBQU/ckI\n8r+URtRiZAVvf/HmBr4yln6GdEnLaeWLESDLrZzrIrqtRa8cdUdJt01FfTccdrrM\nQ4MzSAyXigXIoKRVJtr/Sc0R7DVCWFC1IcHGx92C0QKBgQDLbeyW4vHN0t9erKmL\ntrh2xkl1aJ15dpbkDrCnbashusVONWRiYQDOVIA8B75qNU37aXj8RDkK9d+67oh+\nHyn9lBMOhpmWwhvjcZVp/cQWvxaecTPOoGiKKTvGfSq3qq8GBqbccJmALxUO2r8S\nDGNEO0UnLF54S5qg2O8mCGwgewKBgQDAPHmcZD7qj/Ia2qioxlBRn5GeAxZMVk5u\nHzdjAYC/ARgH7ODlKS4Rwy/+ay2xFqfxC3yGLgDWFMCPVOFoKunAv/wcHEBYVopu\n7F+S18n49UsR3uz7FFeaK8NlzfJVBY/nNmF1jDqDJAcKTLbbUn7/JtvnYnuLxloS\nrkk83ZjPhwKBgQCGWiP+BwZxzApQCbK0Hko3z39mdmBCfwrqtbT/7tMuJJ74pxSU\nUMJqgq5qdybQGEJXf/IykZAm5/oKCE3HFifyXKA1YLoBMlOe5D4s0Td3Wl7C57qy\nhYhlbxQWZEYZJTYQwcXkIs2ONgovVFMKxXmt74MdexUtV6lY/8z6DmfzDwKBgQC6\nYmguv+tYlZRRgSwB57W8ThBrueaGwS9uCgozjiN8Dd104bDzv0eRpUQFU3mLt8HB\nLjfgCP56kshYsB2UV/coEXyo7KNegxnZjojj4SFMptfQTepLTl/ZdREQxettj+UE\ncm9v/zRELkw9KkAoygWj8dNItu2+ieSPNDiCMQCWRQKBgEtiKLGl9Firv362VLzI\ndiI1sLlubDadK6dq8u7UmakdJk9i77Xmj3FlNF+TZ4d2AOt4oXXseym8tLMHthzX\nPRtvMt5PepySSN28YukZMOqjmPyyjo8nidYug+mxkuN2OHKCXFeqDKfGXGdGmZy+\nJRQ5UmVi9KbrNqliQrqwgqRM\n-----END PRIVATE KEY-----\n",
+  "client_email": "kqi-data@vital-program-131316.iam.gserviceaccount.com",
+  "client_id": "100876340446617847753",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/kqi-data%40vital-program-131316.iam.gserviceaccount.com"
+}

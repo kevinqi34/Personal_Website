@@ -32,7 +32,7 @@ function getService()
   return $analytics;
 }
 
-function getFirstprofileId(&$analytics) {
+function getFirstprofileId($analytics) {
   // Get the user's first view (profile) ID.
 
   // Get the list of accounts for the authorized user.
@@ -71,7 +71,7 @@ function getFirstprofileId(&$analytics) {
   }
 }
 
-function getResults(&$analytics, $profileId) {
+function getResults($analytics, $profileId) {
   // Calls the Core Reporting API and queries for the number of sessions
   // for the last seven days.
    return $analytics->data_ga->get(
@@ -81,7 +81,7 @@ function getResults(&$analytics, $profileId) {
        'ga:sessions');
 }
 
-function printResults(&$results) {
+function printResults($results) {
   // Parses the response from the Core Reporting API and prints
   // the profile name and total sessions.
   if (count($results->getRows()) > 0) {
@@ -102,6 +102,7 @@ function printResults(&$results) {
 }
 
 $analytics = getService();
+print_r($analytics);
 $profile = getFirstProfileId($analytics);
 $results = getResults($analytics, $profile);
 printResults($results);
