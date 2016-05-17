@@ -23,17 +23,18 @@ function getReport($analytics) {
   $sessions = new Google_Service_Analyticsreporting_Metric();
   $sessions->setExpression("ga:sessions");
   $sessions->setAlias("sessions");
-  print_r($sessions);
 
   // Create the ReportRequest object.
   $request = new Google_Service_Analyticsreporting_ReportRequest();
   $request->setViewId($VIEW_ID);
   $request->setDateRanges($dateRange);
   $request->setMetrics(array($sessions));
-  print_r($request);
+
 
   $body = new Google_Service_Analyticsreporting_GetReportsRequest();
   $body->setReportRequests( array( $request) );
+
+  print_r($body);
   return $analytics->reports->batchGet( $body );
 }
 
