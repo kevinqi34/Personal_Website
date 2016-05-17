@@ -9,7 +9,7 @@ function getService()
 
   // Use the developers console and replace the values with your
   // service account email, and relative location of your key file.
-  $service_account_email = 'support@spere.io';
+  $service_account_email = 'kqi-data@vital-program-131316.iam.gserviceaccount.com';
   $key_file_location = './kqi_key.json';
 
   // Create and configure a new client object.
@@ -20,7 +20,7 @@ function getService()
 
   // Read the generated client_secrets.p12 key.
   $key = file_get_contents($key_file_location);
-  echo $key;
+
   $cred = new Google_Auth_AssertionCredentials(
       $service_account_email,
       array(Google_Service_Analytics::ANALYTICS_READONLY),
