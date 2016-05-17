@@ -26,12 +26,12 @@ function getService()
       array(Google_Service_Analytics::ANALYTICS_READONLY),
       $key
   );
+
+  print_r($cred);
   $client->setAssertionCredentials($cred);
+
   if($client->getAuth()->isAccessTokenExpired()) {
     $client->getAuth()->refreshTokenWithAssertion($cred);
-  }else {
-
-    echo "hello";
   }
 
   return $analytics;
