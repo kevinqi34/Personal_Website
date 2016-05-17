@@ -103,10 +103,10 @@ function printResults($results) {
     $sessions = $rows[0][0];
 
     // Print the results.
-    print "First view (profile) found: $profileName\n";
-    print "Total sessions: $sessions\n";
+    echo "First view (profile) found: $profileName\n";
+    echo "Total sessions: $sessions\n";
   } else {
-    print "No results found.\n";
+    echo "No results found.\n";
   }
 }
 
