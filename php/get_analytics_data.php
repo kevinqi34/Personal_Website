@@ -80,7 +80,7 @@ foreach( $rows as $row ) {
   );
 }
 
-echo json_encode( $data );
+
 
 
 ?>

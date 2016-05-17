@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+<?php include("./php/get_analytics_data.php") ?>
 <html>
 <head>
 <!-- Signature -->
@@ -107,8 +108,8 @@ Have skills? Contact ME!
 
 <div id="about">
 
+<?php echo json_encode( $data ); ?>
 
-<?php include("./php/get_analytics_data.php") ?>
 
 
 
