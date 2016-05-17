@@ -31,6 +31,7 @@ function getService()
   $client->setAssertionCredentials($cred);
 
   if($client->getAuth()->isAccessTokenExpired()) {
+    echo "hello";
     $client->getAuth()->refreshTokenWithAssertion($cred);
   }
 
