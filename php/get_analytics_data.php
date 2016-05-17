@@ -2,7 +2,7 @@
 /**
  * Load Google API library
  */
-require_once 'google-api-php-client/src/Google/autoload.php';
+require_once '../google-api-php-client/src/Google/autoload.php';
 
 /**
  * Start session to store auth data
