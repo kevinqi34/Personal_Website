@@ -18,13 +18,13 @@ function getReport($analytics) {
   $dateRange = new Google_Service_Analyticsreporting_DateRange();
   $dateRange->setStartDate("7daysAgo");
   $dateRange->setEndDate("today");
-  echo $VIEW_ID;
   print_r($dateRange);
 
   // Create the Metrics object.
   $sessions = new Google_Service_Analyticsreporting_Metric();
   $sessions->setExpression("ga:sessions");
   $sessions->setAlias("sessions");
+  print_r($sessions);
 
   // Create the ReportRequest object.
   $request = new Google_Service_Analyticsreporting_ReportRequest();
