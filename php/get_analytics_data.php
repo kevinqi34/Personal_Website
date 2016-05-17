@@ -11,7 +11,7 @@ $client->addScope(Google_Service_Analytics::ANALYTICS_READONLY);
 function getReport($analytics) {
 
   // Replace with your view ID. E.g., XXXX.
-  $VIEW_ID = "UA-61741997-1";
+  $VIEW_ID = "100743134";
 
 
   // Create the DateRange object.
@@ -83,7 +83,6 @@ if (isset($_SESSION['access_token']) && $_SESSION['access_token']) {
   // Call the Analytics Reporting API V4.
   $response = getReport($analytics);
 
-  echo "hello";
 
   // Print the response.
   printResults($response);
