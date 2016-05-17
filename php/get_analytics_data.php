@@ -17,6 +17,8 @@ function getService()
   $client->setApplicationName("HelloAnalytics");
   $analytics = new Google_Service_Analytics($client);
 
+  print_r($analytics);
+
   // Read the generated client_secrets.p12 key.
   $key = file_get_contents($key_file_location);
   $cred = new Google_Auth_AssertionCredentials(
@@ -102,7 +104,6 @@ function printResults($results) {
 }
 
 $analytics = getService();
-print_r($analytics);
 $profile = getFirstProfileId($analytics);
 $results = getResults($analytics, $profile);
 printResults($results);
