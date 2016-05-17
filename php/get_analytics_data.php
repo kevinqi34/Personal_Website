@@ -29,12 +29,13 @@ function getService()
 
 
   $client->setAssertionCredentials($cred);
-  print_r($client);
+
   if($client->getAuth()->isAccessTokenExpired()) {
     $client->getAuth()->refreshTokenWithAssertion($cred);
   }
 
   return $analytics;
+  print_r($analytics);
 }
 
 function getFirstprofileId($analytics) {
