@@ -20,7 +20,6 @@ function getService()
 
   // Read the generated client_secrets.p12 key.
   $key = file_get_contents($key_file_location);
-  print_r($key);
 
   $cred = new Google_Auth_AssertionCredentials(
       $service_account_email,
@@ -30,6 +29,9 @@ function getService()
   $client->setAssertionCredentials($cred);
   if($client->getAuth()->isAccessTokenExpired()) {
     $client->getAuth()->refreshTokenWithAssertion($cred);
+  }else {
+
+    echo "hello";
   }
 
   return $analytics;
