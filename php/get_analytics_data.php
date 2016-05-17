@@ -1,100 +1,109 @@
 <?php
-require_once './google-api-php-client/src/Google/autoload.php';
 
-session_start();
+function getService()
+{
+  // Creates and returns the Analytics service object.
 
-$client = new Google_Client();
-$client->setAuthConfigFile('./KQI_DATA_DEV.json');
-$client->addScope(Google_Service_Analytics::ANALYTICS_READONLY);
+  // Load the Google API PHP Client Library.
+  require_once './google-api-php-client/src/Google/autoload.php';
 
+  // Use the developers console and replace the values with your
+  // service account email, and relative location of your key file.
+  $service_account_email = 'support@spere.io';
+  $key_file_location = './kqi_key.json';
 
-function getReport($analytics) {
+  // Create and configure a new client object.
+  $client = new Google_Client();
+  $client->setApplicationName("HelloAnalytics");
+  $analytics = new Google_Service_Analytics($client);
 
-  // Replace with your view ID. E.g., XXXX.
-  $VIEW_ID = "100743134";
+  // Read the generated client_secrets.p12 key.
+  $key = file_get_contents($key_file_location);
+  $cred = new Google_Auth_AssertionCredentials(
+      $service_account_email,
+      array(Google_Service_Analytics::ANALYTICS_READONLY),
+      $key
+  );
+  $client->setAssertionCredentials($cred);
+  if($client->getAuth()->isAccessTokenExpired()) {
+    $client->getAuth()->refreshTokenWithAssertion($cred);
+  }
 
-
-  // Create the DateRange object.
-  $dateRange = new Google_Service_Analyticsreporting_DateRange();
-  $dateRange->setStartDate("7daysAgo");
-  $dateRange->setEndDate("today");
-
-  // Create the Metrics object.
-  $sessions = new Google_Service_Analyticsreporting_Metric();
-  $sessions->setExpression("ga:sessions");
-  $sessions->setAlias("sessions");
-
-  // Create the ReportRequest object.
-  $request = new Google_Service_Analyticsreporting_ReportRequest();
-  $request->setViewId($VIEW_ID);
-  $request->setDateRanges($dateRange);
-  $request->setMetrics(array($sessions));
-
-
-  $body = new Google_Service_Analyticsreporting_GetReportsRequest();
-  $body->setReportRequests( array( $request) );
-
-  return $analytics->reports->batchGet( $body );
+  return $analytics;
 }
 
-function printResults($reports) {
-  for ( $reportIndex = 0; $reportIndex < count( $reports ); $reportIndex++ ) {
-    $report = $reports[ $reportIndex ];
-    $header = $report->getColumnHeader();
-    $dimensionHeaders = $header->getDimensions();
-    $metricHeaders = $header->getMetricHeader()->getMetricHeaderEntries();
-    $rows = $report->getData()->getRows();
+function getFirstprofileId(&$analytics) {
+  // Get the user's first view (profile) ID.
 
-    for ( $rowIndex = 0; $rowIndex < count($rows); $rowIndex++) {
-      $row = $rows[ $rowIndex ];
-      $dimensions = $row->getDimensions();
-      $metrics = $row->getMetrics();
-      for ($i = 0; $i < count($dimensionHeaders) && $i < count($dimensions); $i++) {
-        print($dimensionHeaders[$i] . ": " . $dimensions[$i] . "\n");
-      }
+  // Get the list of accounts for the authorized user.
+  $accounts = $analytics->management_accounts->listManagementAccounts();
 
-      for ($j = 0; $j < count( $metricHeaders ) && $j < count( $metrics ); $j++) {
-        $entry = $metricHeaders[$j];
-        $values = $metrics[$j];
-        print("Metric type: " . $entry->getType() . "\n" );
-        for ( $valueIndex = 0; $valueIndex < count( $values->getValues() ); $valueIndex++ ) {
-          $value = $values->getValues()[ $valueIndex ];
-          print($entry->getName() . ": " . $value . "\n");
-        }
+  if (count($accounts->getItems()) > 0) {
+    $items = $accounts->getItems();
+    $firstAccountId = $items[0]->getId();
+
+    // Get the list of properties for the authorized user.
+    $properties = $analytics->management_webproperties
+        ->listManagementWebproperties($firstAccountId);
+
+    if (count($properties->getItems()) > 0) {
+      $items = $properties->getItems();
+      $firstPropertyId = $items[0]->getId();
+
+      // Get the list of views (profiles) for the authorized user.
+      $profiles = $analytics->management_profiles
+          ->listManagementProfiles($firstAccountId, $firstPropertyId);
+
+      if (count($profiles->getItems()) > 0) {
+        $items = $profiles->getItems();
+
+        // Return the first view (profile) ID.
+        return $items[0]->getId();
+
+      } else {
+        throw new Exception('No views (profiles) found for this user.');
       }
+    } else {
+      throw new Exception('No properties found for this user.');
     }
+  } else {
+    throw new Exception('No accounts found for this user.');
   }
 }
 
-
-// If the user has already authorized this app then get an access token
-// else redirect to ask the user to authorize access to Google Analytics.
-if (isset($_SESSION['access_token']) && $_SESSION['access_token']) {
-
-
-  // Set the access token on the client.
-  $client->setAccessToken($_SESSION['access_token']);
-
-
-  // Create an authorized analytics service object.
-  $analytics = new Google_Service_Analyticsreporting($client);
-
-
-  // Call the Analytics Reporting API V4.
-  $response = getReport($analytics);
-
-
-  // Print the response.
-  printResults($response);
-
-} else {
-
-  header('Location: ./php/oauth2callback.php');
-
-
+function getResults(&$analytics, $profileId) {
+  // Calls the Core Reporting API and queries for the number of sessions
+  // for the last seven days.
+   return $analytics->data_ga->get(
+       'ga:' . $profileId,
+       '7daysAgo',
+       'today',
+       'ga:sessions');
 }
 
+function printResults(&$results) {
+  // Parses the response from the Core Reporting API and prints
+  // the profile name and total sessions.
+  if (count($results->getRows()) > 0) {
 
+    // Get the profile name.
+    $profileName = $results->getProfileInfo()->getProfileName();
 
+    // Get the entry for the first entry in the first row.
+    $rows = $results->getRows();
+    $sessions = $rows[0][0];
+
+    // Print the results.
+    print "First view (profile) found: $profileName\n";
+    print "Total sessions: $sessions\n";
+  } else {
+    print "No results found.\n";
+  }
+}
+
+$analytics = getService();
+$profile = getFirstProfileId($analytics);
+$results = getResults($analytics, $profile);
+printResults($results);
 
 ?>
