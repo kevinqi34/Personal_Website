@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html>
-<?php include("./php/get_analytics_data.php") ?>
+
 <head>
 <!-- Signature -->
 <script>
@@ -108,7 +108,7 @@ Have skills? Contact ME!
 
 <div id="about">
 
-
+<?php include("./php/get_analytics_data.php") ?>
 
 
 
