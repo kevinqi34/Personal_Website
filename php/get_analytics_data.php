@@ -70,7 +70,18 @@ $results = $analytics->data_ga->get(
 $rows = $results->getRows();
 var_dump($rows);
 
-print_r($rows);
+/**
+ * Format and output data as JSON
+ */
+$data = array();
+foreach( $rows as $row ) {
+  $data[] = array(
+    'country'   => $row[0],
+    'sessions'  => $row[1]
+  );
+}
+
+echo json_encode( $data );
 
 
 ?>
