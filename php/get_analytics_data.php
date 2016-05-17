@@ -85,7 +85,7 @@ function getResults($analytics, $profileId) {
   // for the last seven days.
    return $analytics->data_ga->get(
        'ga:' . $profileId,
-       '7daysAgo',
+       '30daysAgo',
        'today',
        'ga:sessions');
 }

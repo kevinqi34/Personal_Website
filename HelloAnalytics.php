@@ -10,7 +10,7 @@ function getService()
   // Use the developers console and replace the values with your
   // service account email, and relative location of your key file.
   $service_account_email = 'kqi-data@kqi-analytics-dashboard.iam.gserviceaccount.com';
-  $key_file_location = './kqi_data_key.json';
+  $key_file_location = './kqi_data_key.p12';
 
   // Create and configure a new client object.
   $client = new Google_Client();
@@ -85,7 +85,7 @@ function getResults($analytics, $profileId) {
   // for the last seven days.
    return $analytics->data_ga->get(
        'ga:' . $profileId,
-       '7daysAgo',
+       '30daysAgo',
        'today',
        'ga:sessions');
 }
