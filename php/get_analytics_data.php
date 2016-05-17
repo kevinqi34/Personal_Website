@@ -47,7 +47,7 @@ function getService( $service_account_email, $key ) {
 }
 
 
-
+echo "hello";
 
 /**
  * Get Analytics API instance
@@ -57,7 +57,7 @@ $analytics = getService(
   $google_account[ 'key' ]
 );
 
-echo "hello";
+
 
 /**
  * Query the Analytics data
@@ -75,6 +75,7 @@ $results = $analytics->data_ga->get(
 
 
 $rows = $results->getRows();
+
 
 /**
  * Format and output data as JSON
