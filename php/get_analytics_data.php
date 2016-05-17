@@ -12,6 +12,7 @@ function getReport($analytics) {
 
   // Replace with your view ID. E.g., XXXX.
   $VIEW_ID = "<UA-61741997-1>";
+  echo $VIEW_ID;
 
   // Create the DateRange object.
   $dateRange = new Google_Service_Analyticsreporting_DateRange();
