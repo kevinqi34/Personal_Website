@@ -57,7 +57,7 @@ $analytics = getService(
   $google_account[ 'key' ]
 );
 
-echo "hello";
+
 
 /**
  * Query the Analytics data
@@ -87,6 +87,10 @@ foreach( $rows as $row ) {
     'sessions'  => $row[1]
   );
 }
+
+$data = json_encode($data);
+
+echo $data;
 
 
 
