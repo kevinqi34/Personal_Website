@@ -82,9 +82,8 @@ foreach( $rows as $row ) {
   );
 }
 
-$data = json_encode($data);
 
-// Convert JSON to csv for visualization
+// Convert Data to csv for visualization
 
 $file = fopen('../analytics_data_files/data.csv', 'w');
 
