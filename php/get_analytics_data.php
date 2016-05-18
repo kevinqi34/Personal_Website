@@ -88,7 +88,7 @@ foreach( $rows as $row ) {
 $file = fopen('../analytics_data_files/data.csv', 'w');
 
 foreach ($data as $fields) {
-    fputcsv($data, $fields);
+    fputcsv($file, $fields);
 }
 
 fclose($file);
