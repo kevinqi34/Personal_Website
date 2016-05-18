@@ -3,7 +3,13 @@ function createGraph (input) {
 
   var vis = d3.select("#data_chart"),
       WIDTH = 700,
-      HEIGHT = 500
+      HEIGHT = 500,
+      MARGINS = {
+        top: 20,
+        right: 20,
+        bottom: 20,
+        left: 50
+      }
 
 
 
