@@ -84,7 +84,18 @@ foreach( $rows as $row ) {
 
 $data = json_encode($data);
 
-echo $data;
+// Convert JSON to csv for visualization
+
+$file = fopen('data.csv', 'w');
+
+foreach ($data as $fields) {
+    fputcsv($file, $fields);
+}
+
+fclose($file);
+
+
+
 
 
 ?>
