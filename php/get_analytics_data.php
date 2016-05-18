@@ -86,7 +86,7 @@ $data = json_encode($data);
 
 // Convert JSON to csv for visualization
 
-$file = fopen('data.csv', 'w');
+$file = fopen('../analytics_data_files/data.csv', 'w');
 
 foreach ($data as $fields) {
     fputcsv($file, $fields);
