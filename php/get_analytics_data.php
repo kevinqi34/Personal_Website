@@ -26,12 +26,14 @@ function getService( $service_account_email, $key ) {
 
   // Load the Google API PHP Client Library.
   require_once '../google-api-php-client/src/Google/autoload.php';
-  echo "hello";
+
 
   // Create and configure a new client object.
   $client = new Google_Client();
   $client->setApplicationName( 'Google Analytics Dashboard' );
   $analytics = new Google_Service_Analytics( $client );
+
+  print_r($analytics);
 
   // Read the generated client_secrets.p12 key.
   $cred = new Google_Auth_AssertionCredentials(
