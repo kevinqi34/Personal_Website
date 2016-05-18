@@ -9,7 +9,7 @@ function createGraph (input) {
            dataType: "csv",
            success: function (data) {
 
-             console.log(data)
+             console.log("hello");
 
 
 
