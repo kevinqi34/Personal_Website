@@ -325,7 +325,7 @@ div.port:hover div.text {
 @media (max-width: 372px) {
 
 
-#home, #portfolio, #contact {
+#home, #portfolio, #contact, #about {
   height: calc(100% - 120px);
   top: 120px;
 
