@@ -9,7 +9,6 @@ function createGraph (input) {
           "format": "json"
        },
        "categoryField": "city",
-
        "categoryAxis": {
          "gridAlpha": 0.07,
          "title": "City"

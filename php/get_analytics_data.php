@@ -79,7 +79,7 @@ $rows = $results->getRows();
 $data = array();
 foreach( $rows as $row ) {
   $data[] = array(
-    'country'   => $row[0],
+    'city'   => $row[0],
     'sessions'  => $row[1]
   );
 }
