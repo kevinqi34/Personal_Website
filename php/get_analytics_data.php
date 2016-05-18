@@ -64,7 +64,7 @@ $analytics = getService(
  */
 $results = $analytics->data_ga->get(
   'ga:' . $google_account[ 'profile' ],
-  '30daysAgo',
+  '60daysAgo',
   'today',
   'ga:sessions',
   array(
