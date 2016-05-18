@@ -328,7 +328,7 @@ div.port:hover div.text {
 #home, #portfolio, #contact, #about {
   height: calc(100% - 120px);
   top: 120px;
-
+  border: 1px solid black;
 
 
 }
