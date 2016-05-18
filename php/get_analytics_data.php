@@ -45,7 +45,7 @@ function getService( $service_account_email, $key ) {
   $client->setAssertionCredentials( $cred );
   if( $client->getAuth()->isAccessTokenExpired() ) {
     $client->getAuth()->refreshTokenWithAssertion( $cred );
-    echo "hello";
+
   }
 
   return $analytics;
