@@ -204,7 +204,8 @@ div.port:hover div.text {
   width: 700px;
   height: 500px;
   border: 1px solid black;
-  margin: auto;
+  margin-left: calc(50% - 350px);
+  margin-top: 50px;
 
 
 
