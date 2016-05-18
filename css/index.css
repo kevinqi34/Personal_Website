@@ -195,6 +195,7 @@ div.port:hover div.text {
 #about {
   width: 1000px;
   border: 1px solid black;
+  margin: auto;
 
 
 }
@@ -203,6 +204,7 @@ div.port:hover div.text {
   width: 700px;
   height: 500px;
   border: 1px solid black;
+  margin: auto;
 
 
 
