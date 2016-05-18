@@ -67,7 +67,7 @@ $results = $analytics->data_ga->get(
   array(
     'dimensions'  => 'ga:country',
     'sort'        => '-ga:sessions',
-    'max-results' => 20
+    'max-results' => 5
   ) );
 
 
