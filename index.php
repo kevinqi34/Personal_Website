@@ -40,7 +40,7 @@ Have skills? Contact ME!
   <script type="text/javascript" src="./js/jquery-ui.js"></script>
 
   <!-- Visualization Library -->
-  <script src="./d3/d3.min.js"></script>
+
   <script src="./js/data_graph.js"></script>
 
   <!-- Other Stuff -->
@@ -112,7 +112,7 @@ Have skills? Contact ME!
 
 <div id="about">
 
-<svg id="data_chart"></svg>
+<div id="data_chart"></div>
 
 
 
