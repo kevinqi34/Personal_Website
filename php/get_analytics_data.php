@@ -26,6 +26,7 @@ function getService( $service_account_email, $key ) {
 
   // Load the Google API PHP Client Library.
   require_once '../google-api-php-client/src/Google/autoload.php';
+  echo "hello";
 
   // Create and configure a new client object.
   $client = new Google_Client();
@@ -90,7 +91,7 @@ foreach( $rows as $row ) {
 
 $data = json_encode($data);
 
-echo $data;
+
 
 
 
