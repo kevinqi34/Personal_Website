@@ -89,7 +89,7 @@ $data = json_encode($data);
 $file = fopen('../analytics_data_files/data.csv', 'w');
 
 foreach ($data as $fields) {
-    fputcsv($file, $fields);
+    echo $fields;
 }
 
 fclose($file);
