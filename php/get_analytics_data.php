@@ -33,7 +33,6 @@ function getService( $service_account_email, $key ) {
   $client->setApplicationName( 'Google Analytics Dashboard' );
   $analytics = new Google_Service_Analytics( $client );
 
-  print_r($analytics);
 
   // Read the generated client_secrets.p12 key.
   $cred = new Google_Auth_AssertionCredentials(
@@ -41,6 +40,9 @@ function getService( $service_account_email, $key ) {
       array( Google_Service_Analytics::ANALYTICS_READONLY ),
       $key
   );
+
+  print_r($cred);
+
   $client->setAssertionCredentials( $cred );
   if( $client->getAuth()->isAccessTokenExpired() ) {
     $client->getAuth()->refreshTokenWithAssertion( $cred );
