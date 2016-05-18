@@ -61,7 +61,7 @@ $analytics = getService(
 // Create search Query
 $results = $analytics->data_ga->get(
   'ga:' . $google_account[ 'profile' ],
-  '120daysAgo',
+  '7daysAgo',
   'today',
   'ga:sessions',
   array(
