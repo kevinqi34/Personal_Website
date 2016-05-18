@@ -95,7 +95,7 @@ foreach( $rows as $row ) {
 
 $data = json_encode($data);
 
-
+echo $data;
 
 
 
