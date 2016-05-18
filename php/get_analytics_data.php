@@ -28,7 +28,6 @@ function getService( $service_account_email, $key ) {
   $client->setAssertionCredentials( $cred );
   if( $client->getAuth()->isAccessTokenExpired() ) {
 
-    // this line doesn't work
     $client->getAuth()->refreshTokenWithAssertion( $cred );
 
   }
@@ -61,6 +60,8 @@ $analytics = getService(
   $google_account[ 'email' ],
   $google_account[ 'key' ]
 );
+
+print_r($analytics);
 
 
 
