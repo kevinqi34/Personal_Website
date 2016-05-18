@@ -107,7 +107,7 @@ Have skills? Contact ME!
 
 <div id="about">
 
-<?php echo exec('./php/get_analytics_data.php'); ?>
+<?php echo shell_exec('./php/get_analytics_data.php'); ?>
 
 
 
