@@ -65,9 +65,7 @@ $results = $analytics->data_ga->get(
   'today',
   'ga:sessions',
   array(
-    'dimensions'  => 'ga:city',
-    'sort'        => '-ga:sessions',
-    'max-results' => 5
+    'dimensions'  => 'ga:date'
   ) );
 
 
@@ -79,7 +77,7 @@ $rows = $results->getRows();
 $data = array();
 foreach( $rows as $row ) {
   $data[] = array(
-    'city'   => $row[0],
+    'date'   => $row[0],
     'sessions'  => $row[1]
   );
 }

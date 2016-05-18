@@ -40,9 +40,7 @@ Have skills? Contact ME!
   <script type="text/javascript" src="./js/jquery-ui.js"></script>
 
   <!-- Visualization Library -->
-  <script src="./amcharts/amcharts.js"></script>
-  <script src="./amcharts/serial.js"></script>
-  <script src="./amcharts/plugins/dataloader/dataloader.min.js"></script>
+  <script src="./d3/d3.min.js"></script>
   <script src="./js/data_graph.js"></script>
 
   <!-- Other Stuff -->
