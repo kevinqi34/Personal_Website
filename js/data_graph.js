@@ -5,9 +5,9 @@ function createGraph (input) {
       WIDTH = 700,
       HEIGHT = 500,
       MARGINS = {
-        top: 20,
-        right: 20,
-        bottom: 20,
+        top: 50,
+        right: 50,
+        bottom: 50,
         left: 50
       },
 
