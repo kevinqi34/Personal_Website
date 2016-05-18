@@ -9,16 +9,22 @@ function createGraph (input) {
         right: 20,
         bottom: 20,
         left: 50
-      }
+      },
 
 
 
   xScale = d3.scale.linear().range([MARGINS.left, WIDTH - MARGINS.right]).domain([2000,2010]),
+  yScale = d3.scale.linear().range([HEIGHT - MARGINS.top, MARGINS.bottom]).domain([134,215]),
 
 
+  xAxis = d3.svg.axis()
+    .scale(xScale),
 
+  yAxis = d3.svg.axis()
+    .scale(yScale);
 
-
+    vis.append("svg:g")
+    .call(xAxis);
 
 
 }
