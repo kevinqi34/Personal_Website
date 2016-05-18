@@ -112,7 +112,7 @@ Have skills? Contact ME!
 
 <div id="about">
 
-<div id="data_chart"></div>
+<svg id="data_chart"></svg>
 
 
 
