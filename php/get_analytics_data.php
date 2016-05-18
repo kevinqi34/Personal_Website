@@ -7,12 +7,12 @@ session_start();
 function getService( $service_account_email, $key ) {
   // Creates and returns the Analytics service object.
 
-  // Load the Google API PHP Client Library.
-  //require_once '../google-api-php-client/src/Google/autoload.php';
+  $config = new Google_Config();
+  $config->setClassConfig('Google_Cache_File', array('directory' => '/tmp/kqi_data/'));
 
 
   // Create and configure a new client object.
-  $client = new Google_Client();
+  $client = new Google_Client($config);
   $client->setApplicationName( 'Google Analytics Dashboard' );
   $analytics = new Google_Service_Analytics( $client );
 
@@ -29,9 +29,9 @@ function getService( $service_account_email, $key ) {
   if( $client->getAuth()->isAccessTokenExpired() ) {
     try {
       $client->getAuth()->refreshTokenWithAssertion($cred);
-    } catch (Exception $e) {
-      var_dump($e->getMessage());
-} 
+        } catch (Exception $e) {
+          var_dump($e->getMessage());
+    }
 
     $client->getAuth()->refreshTokenWithAssertion( $cred );
 
