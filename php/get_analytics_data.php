@@ -1,12 +1,10 @@
 <?php
 session_start();
 
-/**
- * Get Analytics API object
- */
+// Creates and returns the Analytics service object.
 function getService( $service_account_email, $key ) {
-  // Creates and returns the Analytics service object.
 
+  // Config the Storage folder
   $config = new Google_Config();
   $config->setClassConfig('Google_Cache_File', array('directory' => '/tmp/kqi_data/'));
 
@@ -37,15 +35,12 @@ function getService( $service_account_email, $key ) {
 
 
 
-/**
- * Load Google API library
- */
+ // Load Library
 require_once '../google-api-php-client/src/Google/autoload.php';
 
 
-/**
- * Set Google service account details
- */
+ // Set login info
+
 $google_account = array(
   'email'   => 'kqi-data@kqi-analytics-dashboard.iam.gserviceaccount.com',
   'key'     => file_get_contents( '../kqi_data_key.p12' ),
@@ -53,9 +48,8 @@ $google_account = array(
 );
 
 
-/**
- * Get Analytics API instance
- */
+// Get data
+
 $analytics = getService(
   $google_account[ 'email' ],
   $google_account[ 'key' ]
@@ -64,9 +58,7 @@ $analytics = getService(
 
 
 
-/**
- * Query the Analytics data
- */
+// Create search Query
 $results = $analytics->data_ga->get(
   'ga:' . $google_account[ 'profile' ],
   '60daysAgo',
@@ -82,9 +74,8 @@ $results = $analytics->data_ga->get(
 $rows = $results->getRows();
 
 
-/**
- * Format and output data as JSON
- */
+
+// Format data in JSON
 $data = array();
 foreach( $rows as $row ) {
   $data[] = array(
