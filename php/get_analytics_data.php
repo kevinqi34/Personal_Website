@@ -41,10 +41,11 @@ function getService( $service_account_email, $key ) {
       $key
   );
 
-  print_r($cred);
 
   $client->setAssertionCredentials( $cred );
   if( $client->getAuth()->isAccessTokenExpired() ) {
+
+    echo "hello";
     $client->getAuth()->refreshTokenWithAssertion( $cred );
   }
 
