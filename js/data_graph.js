@@ -24,6 +24,7 @@ function createGraph (input) {
     .scale(yScale);
 
     vis.append("svg:g")
+    .attr("transform", "translate(0," + (HEIGHT - MARGINS.bottom) + ")")
     .call(xAxis);
 
 
