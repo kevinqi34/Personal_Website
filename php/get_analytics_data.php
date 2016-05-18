@@ -61,11 +61,11 @@ $analytics = getService(
 // Create search Query
 $results = $analytics->data_ga->get(
   'ga:' . $google_account[ 'profile' ],
-  '7daysAgo',
+  '30daysAgo',
   'today',
   'ga:sessions',
   array(
-    'dimensions'  => 'ga:country',
+    'dimensions'  => 'ga:city',
     'sort'        => '-ga:sessions',
     'max-results' => 5
   ) );

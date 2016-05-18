@@ -8,10 +8,11 @@ function createGraph (input) {
           "url": "../php/get_analytics_data.php",
           "format": "json"
        },
-       "categoryField": "country",
+       "categoryField": "city",
+
        "categoryAxis": {
          "gridAlpha": 0.07,
-         "title": "Country"
+         "title": "City"
        },
        "valueAxes": [{
          "stackType": "regular",
