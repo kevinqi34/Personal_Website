@@ -13,6 +13,10 @@ function createGraph (input) {
 
 
 
+  xScale = d3.scale.linear().range([MARGINS.left, WIDTH - MARGINS.right]).domain([2000,2010]),
+
+
+
 
 
 
