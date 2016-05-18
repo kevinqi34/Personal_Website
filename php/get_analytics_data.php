@@ -61,7 +61,6 @@ $analytics = getService(
   $google_account[ 'key' ]
 );
 
-print_r($analytics);
 
 
 
