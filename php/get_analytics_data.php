@@ -73,8 +73,14 @@ $rows = $results->getRows();
 
 
 
-// Format data in JSON
+
 $data = array();
+
+// Insert Titles
+
+$data[] = array("Date", "Sessions");
+
+
 foreach( $rows as $row ) {
   $data[] = array(
     'date'   => $row[0],
