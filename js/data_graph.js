@@ -12,7 +12,7 @@ function createGraph (input) {
         }
       );
 
-    }, 5000);
+    }, 2000);
 
 
 
