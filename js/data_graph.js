@@ -1,18 +1,32 @@
 
 function createGraph (input) {
 
-  setTimeout(function () {
+  // get data
+
+  $.ajax({
+           type: "GET",
+           url: "./analytics_data_files/data.csv",
+           dataType: "csv",
+           success: function (data) { console.log(data) }
+       });
+
+
+
+
+  all.done(function () {
+    // something to call when all files have been successfully loaded
+  });
 
     g = new Dygraph(
         document.getElementById(input),
-        "../analytics_data_files/data.csv", // path to CSV file
+        data, // path to CSV file
         {
 
 
         }
       );
 
-    }, 3000);
+
 
 
 
