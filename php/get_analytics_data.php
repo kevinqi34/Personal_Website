@@ -1,22 +1,5 @@
 <?php
-/**
- * Load Google API library
- */
-require_once '../google-api-php-client/src/Google/autoload.php';
-
-/**
- * Start session to store auth data
- */
 session_start();
-
-/**
- * Set Google service account details
- */
-$google_account = array(
-  'email'   => 'kqi-data@kqi-analytics-dashboard.iam.gserviceaccount.com',
-  'key'     => file_get_contents( '../kqi_data_key.p12' ),
-  'profile' => '100743134'
-);
 
 /**
  * Get Analytics API object
@@ -25,7 +8,7 @@ function getService( $service_account_email, $key ) {
   // Creates and returns the Analytics service object.
 
   // Load the Google API PHP Client Library.
-  require_once '../google-api-php-client/src/Google/autoload.php';
+  //require_once '../google-api-php-client/src/Google/autoload.php';
 
 
   // Create and configure a new client object.
@@ -44,6 +27,8 @@ function getService( $service_account_email, $key ) {
 
   $client->setAssertionCredentials( $cred );
   if( $client->getAuth()->isAccessTokenExpired() ) {
+
+    // this line doesn't work
     $client->getAuth()->refreshTokenWithAssertion( $cred );
 
   }
@@ -52,6 +37,21 @@ function getService( $service_account_email, $key ) {
 }
 
 
+
+/**
+ * Load Google API library
+ */
+require_once '../google-api-php-client/src/Google/autoload.php';
+
+
+/**
+ * Set Google service account details
+ */
+$google_account = array(
+  'email'   => 'kqi-data@kqi-analytics-dashboard.iam.gserviceaccount.com',
+  'key'     => file_get_contents( '../kqi_data_key.p12' ),
+  'profile' => '100743134'
+);
 
 
 /**
@@ -96,8 +96,6 @@ foreach( $rows as $row ) {
 $data = json_encode($data);
 
 echo $data;
-
-
 
 
 ?>
