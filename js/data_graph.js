@@ -16,7 +16,7 @@ function createGraph (input) {
             }
        });
 
-
+/*
 
     g = new Dygraph(
         document.getElementById(input),
@@ -28,7 +28,7 @@ function createGraph (input) {
       );
 
 
-
+*/
 
 
 }
