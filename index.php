@@ -39,9 +39,16 @@ Have skills? Contact ME!
   <script type="text/javascript" src="./js/jquery-1.11.2.js"></script>
   <script type="text/javascript" src="./js/jquery-ui.js"></script>
 
+  <!-- Visualization Library -->
+  <script src="./amcharts/amcharts.js"></script>
+  <script src="./amcharts/serial.js"></script>
+  <script src="./amcharts/plugins/dataloader/dataloader.min.js"></script>
+  <script src="./js/data_graph.js"></script>
+
   <!-- Other Stuff -->
   <script src="./js/initfunc.js"></script>
   <script src="./js/driver.js"></script>
+
   <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700,300' rel='stylesheet' type='text/css'>
   <link href="./css/index.css" rel="stylesheet" type="text/css" />
   <link href="./css/rotation.css" rel="stylesheet" type="text/css" />
@@ -107,7 +114,7 @@ Have skills? Contact ME!
 
 <div id="about">
 
-
+<div id="data_chart"></div>
 
 
 

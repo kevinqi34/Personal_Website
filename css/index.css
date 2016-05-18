@@ -191,6 +191,28 @@ div.port:hover div.text {
 
 }
 
+
+#about {
+  width: 1000px;
+  border: 1px solid black;
+
+
+}
+
+#data_chart {
+  width: 700px;
+  height: 500px;
+  border: 1px solid black;
+
+
+
+
+}
+
+
+
+
+
 #contact {
   width: 300px;
   margin: auto;
