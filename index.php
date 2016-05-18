@@ -40,7 +40,7 @@ Have skills? Contact ME!
   <script type="text/javascript" src="./js/jquery-ui.js"></script>
 
   <!-- Visualization Library -->
-
+  <script src="./js/dygraph-combined.js"></script>
   <script src="./js/data_graph.js"></script>
 
   <!-- Other Stuff -->
