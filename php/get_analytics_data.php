@@ -94,11 +94,16 @@ $data = array();
 
 // Insert Titles
 
-$data[] = array("Date", "APCalculator", "Spere", "Flashpilot", "Gamez4school");
+$data[] = array("Date", "APCalculator", "Spere", "Flashpilot", "Gamez4school", "Total");
 
 $date_range = sizeof($rows[0]);
 
 for ($date = 1; $date < $date_range + 1; $date++ ) {
+
+  $sum = 0;
+  foreach($rows as $row) {
+    $sum = $sum + $row[$row][$date - 1][1];
+  }
 
   $data[$date] = array(
     'date'   => $rows[0][$date-1][0],
@@ -106,6 +111,7 @@ for ($date = 1; $date < $date_range + 1; $date++ ) {
     'sessions_2' => $rows[1][$date-1][1],
     'sessions_3' => $rows[2][$date-1][1],
     'session_4' => $rows[3][$date-1][1],
+    'session_5' => $sum
 
   );
 
