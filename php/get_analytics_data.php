@@ -118,7 +118,6 @@ for ($date = 1; $date < $date_range + 1; $date++ ) {
 
 }
 
-print_r($data);
 
 
 
