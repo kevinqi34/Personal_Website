@@ -11,7 +11,10 @@ function createGraph (input) {
         "../analytics_data_files/data.csv", // path to CSV file
         {
           ylabel: 'Sessions',
-          xlabel: 'Past 60 Days'
+          xlabel: 'Past 60 Days',
+          axisLabelFontSize: '15',
+          axisLabelWidth: '70'
+
 
         }
       );
