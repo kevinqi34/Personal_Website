@@ -1,7 +1,7 @@
 
 function createGraph (input) {
 
-
+  $("#about").show();
 
     g = new Dygraph(
         document.getElementById(input),
@@ -12,9 +12,7 @@ function createGraph (input) {
         }
       );
 
-    console.log("hello");
 
-    
 
 
 
