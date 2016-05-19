@@ -44,7 +44,6 @@ require_once '../google-api-php-client/src/Google/autoload.php';
 $google_account = array(
   'email'   => 'kqi-data@kqi-analytics-dashboard.iam.gserviceaccount.com',
   'key'     => file_get_contents( '../kqi_data_key.p12' ),
-  'profile' => '100743134'
 );
 
 
@@ -59,8 +58,14 @@ $analytics = getService(
 
 
 // Create search Query
+
+
+$views = array('100743134', '105244851', '118502314','118511914');
+
+foreach ($views as $view) {
+
 $results = $analytics->data_ga->get(
-  'ga:' . $google_account[ 'profile' ],
+  'ga:' . $view,
   '60daysAgo',
   'today',
   'ga:sessions',
@@ -68,9 +73,12 @@ $results = $analytics->data_ga->get(
     'dimensions'  => 'ga:date'
   ) );
 
+}
+
 
 $rows = $results->getRows();
 
+print_r($rows);
 
 
 
