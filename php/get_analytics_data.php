@@ -70,7 +70,7 @@ $results[] = $analytics->data_ga->get(
   'ga:' . $view,
   '60daysAgo',
   'today',
-  'ga:views',
+  'ga:pageviews',
   array(
     'dimensions'  => 'ga:date'
   ) );
