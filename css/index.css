@@ -239,7 +239,7 @@ div.port:hover div.text {
 }
 
 #data_chart {
-
+  margin-top: 25px;
   position: relative;
   margin-left: calc(50% - 400px);
 
