@@ -125,8 +125,10 @@ Have skills? Contact ME!
 
 
 <h3>Past 60 Days Stats</h2>
-<div id="data_chart" style="width:800px; height:500px;"></div>
 
+<div id="wrapper_chart">
+<div id="data_chart" style="width:800px; height:500px;"></div>
+</div>
 
 
 
