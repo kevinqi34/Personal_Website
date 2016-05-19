@@ -224,9 +224,11 @@ div.port:hover div.text {
 
 
 #about h2 {
+  position: relative;
+  width: 100;
   text-align: center;
   border-bottom: 2px solid #707070;
-  font-size: 25;
+  font-size: 20px;
   font-weight: 100;
 
 
@@ -235,6 +237,7 @@ div.port:hover div.text {
 
 #data_chart {
 
+  position: relative;
   margin-left: calc(50% - 400px);
   margin-top: 50px;
 
