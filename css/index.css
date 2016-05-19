@@ -397,6 +397,21 @@ div.port:hover div.text {
 }
 
 
+@media (max-width: 900px) {
+
+  #data_chart {
+    margin-left: calc(50% - 160px);
+
+
+  }
+
+
+
+
+}
+
+
+
 
 
 @media (max-width: 450px) {
