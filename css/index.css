@@ -55,11 +55,11 @@ body {
 #contact, #about {
 
   position: absolute;
-  top: 60px;
+  top: 120px;
   height: 100%;
   width: 100%;
   border: 1px solid black;
-  overflow: auto;
+  overflow: hidden;
 
 }
 
