@@ -78,7 +78,7 @@ $data = array();
 
 // Insert Titles
 
-$data[] = array("Date", "AP_Calculator");
+$data[] = array("Date", "APCalculator");
 
 
 foreach( $rows as $row ) {
