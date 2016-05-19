@@ -98,17 +98,14 @@ $data[] = array("Date", "APCalculator", "Spere", "Flashpilot", "Gamez4school");
 
 $date_range = sizeof($rows[0]);
 
-
-
-
-for ($date = 0; $date < $date_range; $date++ ) {
+for ($date = 1; $date < $date_range + 1; $date++ ) {
 
   $data[$date] = array(
-    'date'   => $rows[0][$date][0],
-    'sessions_1'  => $rows[0][$date][1],
-    'sessions_2' => $rows[1][$date][1],
-    'sessions_3' => $rows[2][$date][1],
-    'session_4' => $rows[3][$date][1],
+    'date'   => $rows[0][$date-1][0],
+    'sessions_1'  => $rows[0][$date-1][1],
+    'sessions_2' => $rows[1][$date-1][1],
+    'sessions_3' => $rows[2][$date-1][1],
+    'session_4' => $rows[3][$date-1][1],
 
   );
 
@@ -117,7 +114,7 @@ for ($date = 0; $date < $date_range; $date++ ) {
 
 print_r($data);
 
-/*
+
 
 // Convert Data to csv for visualization
 
