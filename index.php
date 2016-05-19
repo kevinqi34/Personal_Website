@@ -117,7 +117,7 @@ Have skills? Contact ME!
 <h3>About Me</h2>
 <div class="bio">
 
-
+<?php include './php/bio.php' ?>
 
 </div>
 

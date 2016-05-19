@@ -165,7 +165,7 @@ div.text {
 
 }
 
-div.text p {
+div.text p, #about div.bio p {
 
   font-size: 14px;
   background: white;
