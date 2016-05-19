@@ -102,7 +102,7 @@ for ($date = 1; $date < $date_range + 1; $date++ ) {
 
   $sum = 0;
   foreach($rows as $row) {
-    $sum = $sum + $row[$row][$date - 1][1];
+    $sum = $sum + $rows[$row][$date - 1][1];
   }
 
   $data[$date] = array(
