@@ -32,7 +32,15 @@ var w = (window.innerWidth);
   if (w < 900) {
     $('#data_chart').css("width","320px");
     $('#data_chart').css("height","300px");
-    createGraph('#data_chart');
+
+
+  }else {
+
+    $('#data_chart').css("width","800px");
+    $('#data_chart').css("height","500px");
+
+
+
 
   }
 
