@@ -85,7 +85,7 @@ $rows = array();
 
 foreach ($results as $result) {
 
-  $rows[] = $results->getRows();
+  $rows[] = $result->getRows();
 
 
 
