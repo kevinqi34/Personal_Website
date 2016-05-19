@@ -101,8 +101,8 @@ $date_range = sizeof($rows[0]);
 for ($date = 1; $date < $date_range + 1; $date++ ) {
 
   $sum = 0;
-  foreach($rows as $row) {
-    $sum = $sum + $rows[][$date - 1][1];
+  for($a = 0; $a < sizeof($rows); $a++) {
+    $sum = $sum + $rows[$a][$date - 1][1];
   }
 
   $data[$date] = array(
