@@ -128,8 +128,7 @@ Have skills? Contact ME!
 <?php
 
 $myfile = fopen("./analytics_data_files/total_sum.txt", "r") or die("Unable to open file!");
-
-$hits = fread($myfile);
+$hits = fread($myfile, filesize("./analytics_data_files/total_sum.txt"));
 fclose($myfile);
 
 
