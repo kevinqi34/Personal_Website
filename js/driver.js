@@ -7,7 +7,6 @@ $(document).ready( function() {
   // navbar
   $("body").on("click",function() {
     page_status();
-    createGraph("data_chart");
   });
 
 
@@ -18,13 +17,20 @@ $(document).ready( function() {
   change_pg("contact");
   change_pg("about");
 
-  //social media
+  // social media
 
   redirect ('insta', 'https://www.instagram.com/kqi345/', 'tab');
   redirect ('linked', 'https://www.linkedin.com/in/kevin-qi-78a82a9b', 'tab');
   redirect ('fb', 'https://www.facebook.com/kevin.qi.71', 'tab');
   redirect ('git', 'https://github.com/kevinqi34', 'tab');
 
+
+ // create analytics
+
+ $('#about_p').on("click",function(){
+   createGraph("data_chart");
+
+ });
 
 });
 
