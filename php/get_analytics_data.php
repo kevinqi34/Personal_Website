@@ -138,7 +138,7 @@ fclose($file);
 
 $sum = fopen('../analytics_data_files/total_sum.txt','w');
 
-file_put_contents($sum, $total_sum);
+fwrite($sum, $total_sum);
 
 fclose($sum);
 
