@@ -227,6 +227,7 @@ div.port:hover div.text {
   padding: 5px;
   position: relative;
   width: 300px;
+  margin: auto;
   text-align: center;
   border-bottom: 2px solid #707070;
   height: 20px;
