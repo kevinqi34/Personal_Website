@@ -17,7 +17,31 @@ function resizeContent() {
       $('#portfolio').css("width", nwidth);
 
 
+
+
+
+}
+
+
+function resizeGraphs() {
+
+var w = (window.innerWidth);
+
+  if (w < 900) {
+    $('#data_chart').css("width","300px");
+    $('#data_chart').css("height","200px");
+
+
+
+
   }
+
+
+
+
+
+}
+
 
 
   function redirect(id, location, type) {
