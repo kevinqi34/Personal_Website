@@ -29,7 +29,7 @@ var w = (window.innerWidth);
 
   console.log(w);
 
-  if (w <= 1000) {
+  if (w <= 1020) {
     $('#data_chart').css("width","320px");
     $('#data_chart').css("height","300px");
 
