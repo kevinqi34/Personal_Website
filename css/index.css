@@ -223,7 +223,7 @@ div.port:hover div.text {
 }
 
 
-#about h2 {
+#about h2.about {
   padding: 0;
   position: relative;
   width: 100;
