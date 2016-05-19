@@ -135,7 +135,7 @@ fclose($myfile);
 ?>
 
 
-<p>Hits: <span><?php echo $hits ?></span></p>
+<p>Total Views: <span><?php echo $hits ?></span></p>
 <div id="wrapper_chart">
 <div id="data_chart" style="width:800px; height:500px;"></div>
 </div>
