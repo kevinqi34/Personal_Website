@@ -230,6 +230,11 @@ div.port:hover div.text {
 
 }
 
+#about p span {
+  color: lightgreen;
+
+
+}
 
 #about h3 {
   padding: 5px;
