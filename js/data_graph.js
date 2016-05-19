@@ -1,7 +1,8 @@
 
 function createGraph (input) {
 
-  if($("#about").css("display") == "block") {
+  if($('#about').is(':visible')) {
+
 
     console.log("displayed");
 
