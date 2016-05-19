@@ -11,7 +11,8 @@ function createGraph (input) {
         "../analytics_data_files/data.csv", // path to CSV file
         {
           ylabel: 'Sessions',
-          xlabel: 'Past 60 Days'
+          xlabel: 'Date',
+          title: 'Past 60 Days'
 
 
         }
