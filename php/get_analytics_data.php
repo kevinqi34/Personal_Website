@@ -97,6 +97,7 @@ $data = array();
 $data[] = array("Date", "APCalculator", "Spere", "Flashpilot", "Gamez4school", "Total");
 
 $date_range = sizeof($rows[0]);
+$total_sum = 0;
 
 for ($date = 1; $date < $date_range + 1; $date++ ) {
 
@@ -115,10 +116,12 @@ for ($date = 1; $date < $date_range + 1; $date++ ) {
 
   );
 
+  $total_sum = $total_sum + $data["session_5"][$date];
+
 
 }
 
-
+echo $total_sum;
 
 
 // Convert Data to csv for visualization
