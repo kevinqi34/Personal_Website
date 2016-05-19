@@ -226,11 +226,10 @@ div.port:hover div.text {
 #about h3 {
   padding: 0;
   position: relative;
-  width: 100%;
+  width: 100%3;
   text-align: center;
-  border: 1px solid black;
   border-bottom: 2px solid #707070;
-  height: 40px;
+  height: 20px;
   font-size: 20px;
   font-weight: 100;
 
