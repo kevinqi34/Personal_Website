@@ -224,6 +224,8 @@ div.port:hover div.text {
 
 
 #about h2 {
+  padding: 0;
+  margin: 0;
   position: relative;
   width: 100;
   text-align: center;
