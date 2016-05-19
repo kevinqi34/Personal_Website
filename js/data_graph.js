@@ -13,7 +13,6 @@ function createGraph (input) {
           ylabel: 'Sessions',
           xlabel: 'Past 60 Days',
           axisLabelFontSize: '15',
-          axisLabelWidth: '10'
 
 
         }
