@@ -79,8 +79,6 @@ $results[] = $analytics->data_ga->get(
 
 }
 
-print_r($results);
-
 $rows = array();
 
 foreach ($results as $result) {
@@ -101,7 +99,7 @@ $data[] = array("Date", "APCalculator", "Spere", "Flashpilot", "Gamez4school");
 
 foreach( $rows as $row ) {
   $data[] = array(
-    'date'   => $row[0],
+    'date'   => $row[0][0],
     'sessions_1'  => $row[0][1],
     'sessions_2' => $row[1][1],
     'sessions_3' => $row[2][1],
