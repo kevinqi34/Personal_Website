@@ -104,11 +104,11 @@ $date_range = sizeof($rows[0]);
 for ($date = 0; $date < $date_range; $date++ ) {
 
   $data[$date] = array(
-    'date'   => $row[0][$date][0],
-    'sessions_1'  => $row[0][$date][1],
-    'sessions_2' => $row[1][$date][1],
-    'sessions_3' => $row[2][$date][1],
-    'session_4' => $row[3][$date][1],
+    'date'   => $rows[0][$date][0],
+    'sessions_1'  => $rows[0][$date][1],
+    'sessions_2' => $rows[1][$date][1],
+    'sessions_3' => $rows[2][$date][1],
+    'session_4' => $rows[3][$date][1],
 
   );
 
