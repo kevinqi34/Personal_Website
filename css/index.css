@@ -408,7 +408,7 @@ div.port:hover div.text {
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
 
   #about {
     width: 100%;
