@@ -75,18 +75,20 @@ $results[] = $analytics->data_ga->get(
     'dimensions'  => 'ga:date'
   ) );
 
+
+
 }
 
 print_r($results);
 
 
-$rows = $results->getRows();
-
-
-
+//$rows = $results->getRows();
 
 
 $data = array();
+
+
+/*
 
 // Insert Titles
 
@@ -111,7 +113,7 @@ foreach ($data as $fields) {
 
 fclose($file);
 
-
+*/
 
 
 
