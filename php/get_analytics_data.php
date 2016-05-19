@@ -90,7 +90,6 @@ foreach ($results as $result) {
 }
 
 
-print_r($rows);
 
 
 $data = array();
@@ -99,6 +98,12 @@ $data = array();
 
 $data[] = array("Date", "APCalculator", "Spere", "Flashpilot", "Gamez4school");
 
+echo sizeof($rows[0]);
+
+
+/*
+
+for ($data = )
 
 foreach( $rows as $row ) {
   $data[] = array(
@@ -115,7 +120,7 @@ foreach( $rows as $row ) {
 print_r($data);
 
 
-/*
+
 // Convert Data to csv for visualization
 
 $file = fopen('../analytics_data_files/data.csv', 'w');
