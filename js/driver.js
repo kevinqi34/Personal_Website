@@ -7,6 +7,7 @@ $(document).ready( function() {
   // navbar
   $("body").on("click",function() {
     page_status();
+    createGraph("data_chart");
   });
 
 
@@ -24,9 +25,6 @@ $(document).ready( function() {
   redirect ('fb', 'https://www.facebook.com/kevin.qi.71', 'tab');
   redirect ('git', 'https://github.com/kevinqi34', 'tab');
 
-  //create graphs
-
-  createGraph("data_chart");
 
 });
 
