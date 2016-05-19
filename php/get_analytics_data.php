@@ -134,6 +134,14 @@ foreach ($data as $fields) {
 
 fclose($file);
 
+// Insert Total Sum into file
+
+$sum = fopen('../analytics_data_files/total_sum.txt','w');
+
+file_put_contents($sum, $total_sum);
+
+fclose($sum);
+
 
 
 
