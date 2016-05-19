@@ -54,7 +54,7 @@ body {
 
 #contact, #about {
   position: absolute;
-  top: 120px;
+  top: 60px;
   height: calc(100% + 120px);
   width: 100%;
   border: 1px solid black;
