@@ -114,7 +114,13 @@ Have skills? Contact ME!
 
 <img title="Me" src="./pics/me.jpg" />
 
-<h3> About Me</h2>
+<h3>About Me</h2>
+<div class="bio">
+
+
+
+</div>
+
 
 
 
