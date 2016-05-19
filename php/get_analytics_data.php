@@ -61,10 +61,12 @@ $analytics = getService(
 
 
 $views = array('100743134', '105244851', '118502314','118511914');
+$results = array();
+
 
 foreach ($views as $view) {
 
-$results = $analytics->data_ga->get(
+$results[] = $analytics->data_ga->get(
   'ga:' . $view,
   '60daysAgo',
   'today',
@@ -75,10 +77,12 @@ $results = $analytics->data_ga->get(
 
 }
 
+print_r($results);
+
 
 $rows = $results->getRows();
 
-print_r($rows);
+
 
 
 
