@@ -58,6 +58,7 @@ body {
   height: auto;
   border: 1px solid black;
   width: 100%;
+  padding-bottom: 25px;
 
 
 }
@@ -247,6 +248,7 @@ div.port:hover div.text {
   border: 1px solid black;
   position: relative;
   margin-top: 25px;
+  margin-left: calc(50% - 150px);
 
 
 
