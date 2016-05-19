@@ -124,7 +124,7 @@ Have skills? Contact ME!
 
 
 
-<h3>Past 60 Days Stats</h2>
+<h3>Past 60 Days Views</h2>
 <?php
 
 $myfile = fopen("./analytics_data_files/total_sum.txt", "r") or die("Unable to open file!");
