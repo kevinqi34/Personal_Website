@@ -112,7 +112,7 @@ Have skills? Contact ME!
 
 <div id="about">
 
-<div id="data_chart" style="width:700px; height:500px;"></div>
+<div id="data_chart" style="width:500px; height:300px;"></div>
 
 
 
