@@ -61,7 +61,7 @@ $analytics = getService(
 // Create search Query
 $results = $analytics->data_ga->get(
   'ga:' . $google_account[ 'profile' ],
-  '30daysAgo',
+  '60daysAgo',
   'today',
   'ga:sessions',
   array(
@@ -78,7 +78,7 @@ $data = array();
 
 // Insert Titles
 
-$data[] = array("Date", "Sessions");
+$data[] = array("Date", "AP Calculator");
 
 
 foreach( $rows as $row ) {
