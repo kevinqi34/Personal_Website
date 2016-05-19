@@ -228,7 +228,7 @@ div.port:hover div.text {
 #about h3 {
   padding: 5px;
   position: relative;
-  width: 300px;
+  width: 290px;
   margin: auto;
   text-align: center;
   border-bottom: 2px solid #707070;
@@ -241,11 +241,11 @@ div.port:hover div.text {
 }
 
 #about div.bio {
-  width: 300px;
+  width: 290px;
   height: auto;
   position: relative;
   margin-bottom: 25px;
-  margin-left: calc(50% - 150px);
+  margin-left: calc(50% - 145px);
 
 
 
