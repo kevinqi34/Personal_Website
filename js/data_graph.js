@@ -10,7 +10,7 @@ function createGraph (input) {
         document.getElementById(input),
         "../analytics_data_files/data.csv", // path to CSV file
         {
-          ylabel: 'Sessions',
+          ylabel: 'Views',
           xlabel: 'Date',
           xLabelHeight: 15,
           yLabelWidth: 15

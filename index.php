@@ -114,6 +114,8 @@ Have skills? Contact ME!
 
 <img title="Me" src="./pics/me.jpg" />
 
+
+
 <div id="data_chart" style="width:800px; height:500px;"></div>
 
 
