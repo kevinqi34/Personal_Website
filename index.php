@@ -114,8 +114,11 @@ Have skills? Contact ME!
 
 <img title="Me" src="./pics/me.jpg" />
 
+<h2> About Me</h2>
 
 
+
+<h2>Past 60 Days Stats</h2>
 <div id="data_chart" style="width:800px; height:500px;"></div>
 
 
