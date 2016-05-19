@@ -116,7 +116,7 @@ for ($date = 1; $date < $date_range + 1; $date++ ) {
 
   );
 
-  $total_sum = $total_sum + $data["session_5"][$date];
+  $total_sum = $total_sum + $data[$date]['session_5'];
 
 
 }
