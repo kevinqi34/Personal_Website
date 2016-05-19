@@ -27,13 +27,12 @@ function resizeGraphs() {
 
 var w = (window.innerWidth);
 
+  console.log(w);
+
   if (w < 900) {
     $('#data_chart').css("width","300px");
     $('#data_chart').css("height","200px");
     createGraph('#data_chart');
-
-
-
 
   }
 
