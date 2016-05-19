@@ -200,6 +200,19 @@ div.port:hover div.text {
 
 }
 
+
+#about img {
+
+  margin: auto;
+  border-radius: 50%;
+  width: 100px;
+  margin-top: 100px;
+  border: 1px solid black;
+
+
+
+}
+
 #data_chart {
 
   margin-left: calc(50% - 400px);
