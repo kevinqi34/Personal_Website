@@ -371,13 +371,20 @@ div.port:hover div.text {
 @media (max-width: 450px) {
 
 
-#home, #portfolio, #contact, #about {
+#home, #portfolio {
   height: calc(100% - 120px);
   top: 120px;
 
 
 
 }
+
+ #contact, #about {
+   height: calc(100% + 120px);
+
+
+
+ }
 
 #portfolio {
   margin-top: 0;
