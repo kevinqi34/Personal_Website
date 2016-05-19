@@ -12,7 +12,6 @@ function createGraph (input) {
         {
           ylabel: 'Sessions',
           xlabel: 'Date',
-          title: 'Past 60 Days Stats',
           xLabelHeight: 15,
           yLabelWidth: 15
 
