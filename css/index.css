@@ -54,7 +54,7 @@ body {
 
 #contact, #about {
 
-  position: absolute;
+  position: relative;
   top: 120px;
   height: 100%;
   padding-bottom: 50px;
