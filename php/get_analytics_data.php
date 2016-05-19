@@ -89,6 +89,8 @@ foreach ($results as $result) {
 
 }
 
+print_r($rows);
+
 
 
 
