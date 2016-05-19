@@ -1,7 +1,7 @@
 
 function createGraph (input) {
 
-  setTimeout(function () {
+
 
     g = new Dygraph(
         document.getElementById(input),
@@ -12,9 +12,9 @@ function createGraph (input) {
         }
       );
 
-    console.log("hello");  
+    console.log("hello");
 
-    }, 5000);
+    
 
 
 
