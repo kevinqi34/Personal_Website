@@ -94,24 +94,27 @@ foreach ($results as $result) {
 
 $data = array();
 
-print_r($rows);
-
-
-/*
-
 // Insert Titles
 
-$data[] = array("Date", "APCalculator");
+$data[] = array("Date", "APCalculator", "Spere", "Flashpilot", "Gamez4school");
 
 
 foreach( $rows as $row ) {
   $data[] = array(
     'date'   => $row[0],
-    'sessions'  => $row[1]
+    'sessions_1'  => $row[0][1],
+    'sessions_2' => $row[1][1],
+    'sessions_3' => $row[2][1],
+    'session_4' => $row[3][1]
+
   );
 }
 
 
+print_r($data);
+
+
+/*
 // Convert Data to csv for visualization
 
 $file = fopen('../analytics_data_files/data.csv', 'w');
