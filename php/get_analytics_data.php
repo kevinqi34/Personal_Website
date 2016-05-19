@@ -81,11 +81,20 @@ $results[] = $analytics->data_ga->get(
 
 print_r($results);
 
+$rows = array();
 
-//$rows = $results->getRows();
+foreach ($results as $result) {
+
+  $rows[] = $results->getRows();
+
+
+
+}
 
 
 $data = array();
+
+print_r($rows);
 
 
 /*
