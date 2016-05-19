@@ -125,7 +125,18 @@ Have skills? Contact ME!
 
 
 <h3>Past 60 Days Stats</h2>
+<?php
 
+$myfile = fopen("./analytics_data_files/total_sum.txt", "r") or die("Unable to open file!");
+
+$hits = fread($myfile);
+fclose($myfile);
+
+
+?>
+
+
+<p>Hits: <span><?php echo $hits ?></span></p>
 <div id="wrapper_chart">
 <div id="data_chart" style="width:800px; height:500px;"></div>
 </div>
