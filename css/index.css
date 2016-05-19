@@ -381,6 +381,7 @@ div.port:hover div.text {
 
  #contact, #about {
    height: calc(100% + 120px);
+   top: 120px;
 
 
 
