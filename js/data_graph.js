@@ -28,11 +28,9 @@ function createGraph (input) {
 
 
 function realtime_Stream () {
-
+  google.charts.load('current', {'packages':['corechart']});
 
 window.setInterval(function(){
-
-    google.charts.load('current', {'packages':['corechart']});
 
 // Get data
 
