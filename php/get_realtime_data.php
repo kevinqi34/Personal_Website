@@ -63,7 +63,7 @@ $optParams = array(
 
 
 try {
-  $results = $analytics->data_realtime->get(
+  $result = $analytics->data_realtime->get(
       'ga:100743134',
       'rt:activeUsers',
       $optParams);
@@ -73,7 +73,17 @@ try {
 }
 
 
-print_r($results);
+$rows = array();
+
+foreach ($results as $result) {
+
+  $rows[] = $result->getRows();
+
+
+
+}
+
+print_r($rows);
 
 
 
