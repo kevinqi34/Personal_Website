@@ -38,6 +38,8 @@ $.ajax({
     success:function(msg){
         console.log(msg);
 
+        $('#activeUsers').html(msg[4]);
+
 
     }
 
