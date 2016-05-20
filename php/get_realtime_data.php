@@ -94,8 +94,10 @@ foreach ($results as $result) {
 
 }
 
+// Push Sum to end of array
+$realtime[] = $sum;
+
 print_r($realtime);
-echo $sum;
 
 
 
