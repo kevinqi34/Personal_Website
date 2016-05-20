@@ -29,6 +29,9 @@ function createGraph (input) {
 
 function realtime_Stream () {
 
+
+window.setInterval(function(){
+
 // Get data
 
 $.ajax({
@@ -44,6 +47,8 @@ $.ajax({
     }
 
 });
+
+},5000);
 
 
 
