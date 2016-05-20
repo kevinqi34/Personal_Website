@@ -146,7 +146,6 @@ fclose($sum);
 
 // Get Real-time data
 
-function get_data() {
 
 try {
   $realtime = $analytics->data_realtime->get(
@@ -163,10 +162,9 @@ try {
 
 print_r($realtime);
 
-}
 
 
-get_Data();
+
 
 
 ?>
