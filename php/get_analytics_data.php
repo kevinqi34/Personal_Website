@@ -121,7 +121,6 @@ for ($date = 1; $date < $date_range + 1; $date++ ) {
 
 }
 
-echo $total_sum;
 
 
 // Convert Data to csv for visualization
