@@ -144,24 +144,6 @@ fclose($sum);
 
 
 
-// Get Real-time data
-
-
-try {
-  $realtime = $analytics->data_realtime->get(
-      'ga:100743134',
-      'rt:activeUsers',
-      $optParams);
-  // Success.
-} catch (apiServiceException $e) {
-  // Handle API service exceptions.
-  $error = $e->getMessage();
-}
-
-
-
-print_r($realtime);
-
 
 
 
