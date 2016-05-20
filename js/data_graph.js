@@ -41,6 +41,7 @@ $.ajax({
     success:function(msg){
 
         $('#activeUsers').html(msg[4]);
+        $('#activeUsers').css("text-decoration","underline");
         // create chart
 
         var data = google.visualization.arrayToDataTable([
@@ -71,6 +72,9 @@ $.ajax({
     }
 
 });
+
+
+$('#activeUsers').css("text-decoration","none");
 
 },7000);
 
