@@ -73,18 +73,7 @@ try {
 }
 
 
-$rows = array();
-
-foreach ($results as $result) {
-
-  $rows[] = $result->getRows();
-
-
-
-}
-
-print_r($rows);
-
+echo $results['metrics'];
 
 
 
