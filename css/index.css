@@ -275,6 +275,17 @@ div.port:hover div.text {
 
 }
 
+#pie_chart_data {
+  border: 1px solid black;
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  margin-top: 10px;
+
+
+
+}
+
 #realtime {
   width: 300px;
   height: 250px;

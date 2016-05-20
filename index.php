@@ -121,6 +121,9 @@ Have skills? Contact ME!
 <h3>Realtime Stats</h3>
 <div id="realtime">
 <p>Active Users: <span id="activeUsers"></span></p>
+
+<div id="pie_chart_data"></div>
+
 </div>
 
 
