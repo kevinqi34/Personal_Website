@@ -58,24 +58,38 @@ $analytics = getService(
 
 
 // Create search Query
-$optParams = array(
-    'dimensions' => 'rt:medium');
+
+$views = array('ga:100743134', 'ga:105244851', 'ga:118502314','ga:118511914');
+$results = array();
+
+foreach ($views as $view) {
+
+  $optParams = array(
+      'dimensions' => 'rt:medium');
 
 
-try {
-  $results = $analytics->data_realtime->get(
-      'ga:100743134',
-      'rt:activeUsers',
-      $optParams);
-} catch (apiServiceException $e) {
-  // Handle API service exceptions.
-  $error = $e->getMessage();
+  try {
+    $results[] = $analytics->data_realtime->get(
+        'ga:100743134',
+        'rt:activeUsers',
+        $optParams);
+  } catch (apiServiceException $e) {
+    // Handle API service exceptions.
+    $error = $e->getMessage();
+  }
+
+
 }
 
+print_r($results);
+
+/*
 
 $results = $results->totalsForAllResults;
 $realtime = $results['rt:activeUsers'];
 
 echo $realtime;
+
+*/
 
 ?>
