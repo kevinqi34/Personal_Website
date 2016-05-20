@@ -41,7 +41,7 @@ $.ajax({
     success:function(msg){
 
         $('#activeUsers').html(msg[4]);
-        $('#activeUsers').css("font-size","22px");
+        $('#activeUsers').css("font-size","20px");
         // create chart
 
         var data = google.visualization.arrayToDataTable([
