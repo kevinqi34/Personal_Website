@@ -73,7 +73,7 @@ try {
 }
 
 
-echo $results['metrics'];
+echo $results->metrics;
 
 
 
