@@ -83,13 +83,21 @@ foreach ($views as $view) {
 
 print_r($results);
 
-/*
 
-$results = $results->totalsForAllResults;
-$realtime = $results['rt:activeUsers'];
+$realtime = array();
 
-echo $realtime;
+foreach ($results as $result) {
 
-*/
+  $data = $result->totalsForAllResults;
+  $realtime[] = $data['rt:activeUsers'];
+
+
+
+}
+
+print_r($realtime);
+
+
+
 
 ?>
