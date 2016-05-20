@@ -141,6 +141,8 @@ fwrite($sum, $total_sum);
 
 fclose($sum);
 
+echo "Success";
+
 
 
 ?>

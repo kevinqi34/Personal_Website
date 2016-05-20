@@ -93,9 +93,9 @@ function refresh() {
     $.ajax({
      type: "POST",
      url: "../php/get_analytics_data.php",
-     success: function() {
-       console.log("Success");
-       createGraph("data_chart");
+     success: function(data) {
+       console.log(data);
+    
 
      }
     });
