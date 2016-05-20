@@ -39,7 +39,6 @@ $.ajax({
     type:"POST",
     dataType:"json",
     success:function(msg){
-        console.log(msg);
 
         $('#activeUsers').html(msg[4]);
 
@@ -48,7 +47,7 @@ $.ajax({
 
 });
 
-},5000);
+},7000);
 
 
 
