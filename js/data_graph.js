@@ -90,7 +90,14 @@ function refresh() {
 
   $('#refresh').click(function() {
 
-    console.log('hello');
+    $.ajax({
+     type: "POST",
+     url: "./php/get_analytics_data.php",
+     success: function() {
+       console.log("Success");
+
+     }
+    });
 
 
 
