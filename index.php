@@ -128,7 +128,9 @@ Have skills? Contact ME!
 </div>
 
 
-<h3>Past 60 Days</h2>
+<h3>Past 60 Days<img title="Refresh" id="refresh" src="./pics/refresh.png" /></h2>
+
+
 <?php
 
 $myfile = fopen("./analytics_data_files/total_sum.txt", "r") or die("Unable to open file!");
