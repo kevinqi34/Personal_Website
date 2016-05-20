@@ -81,21 +81,21 @@ foreach ($views as $view) {
 
 }
 
-print_r($results);
-
-
 $realtime = array();
+$sum = 0;
 
 foreach ($results as $result) {
 
   $data = $result->totalsForAllResults;
   $realtime[] = $data['rt:activeUsers'];
+  $sum = $sum + $data['rt:activeUsers'];
 
 
 
 }
 
 print_r($realtime);
+echo $sum;
 
 
 
