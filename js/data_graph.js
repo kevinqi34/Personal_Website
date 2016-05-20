@@ -82,6 +82,23 @@ $('#activeUsers').css("font-size","18px");
 
 
 
+}
+
+
+
+function refresh() {
+
+  $('#refresh').click(function() {
+
+    console.log('hello');
+
+
+
+
+
+  });
+
+
 
 
 

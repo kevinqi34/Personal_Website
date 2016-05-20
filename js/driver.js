@@ -26,7 +26,6 @@ $(document).ready( function() {
 
 
  // create analytics
-
  realtime_Stream();
 
  $('#about_p').on("click",function(){
