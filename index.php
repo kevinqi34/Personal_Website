@@ -41,6 +41,7 @@ Have skills? Contact ME!
 
   <!-- Visualization Library -->
   <script src="./js/dygraph-combined.js"></script>
+  <script src="./js/google_charts.js"></script>
 
   <!-- Other Stuff -->
   <script src="./js/data_graph.js"></script>
