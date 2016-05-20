@@ -25,3 +25,29 @@ function createGraph (input) {
 
 
 }
+
+
+function realtime_Stream () {
+
+// Get data
+
+$.ajax({
+    url:"../php/get_realtime_data.php",
+    type:"POST",
+    dataType:"json",
+    success:function(msg){
+        console.log(msg);
+
+
+    }
+
+});
+
+
+
+
+
+
+
+
+}

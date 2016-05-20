@@ -32,7 +32,7 @@ $(document).ready( function() {
 
  });
 
- 
+ realtime_Stream();
 
 });
 
