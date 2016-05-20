@@ -254,12 +254,11 @@ div.port:hover div.text {
 }
 
 #about h3 img {
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
   border: none;
   position: absolute;
-  top: -50px;
-  right: 0;
+  top: -40px;
 
 
 
