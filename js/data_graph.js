@@ -34,7 +34,7 @@ function realTime() {
 
     gapi.analytics.auth.authorize({
       container: 'authorize',
-      clientid: 'UA-61741997-1'
+      clientid: '100743134'
     });
 
 
