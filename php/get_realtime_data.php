@@ -73,7 +73,7 @@ try {
 }
 
 
-print_r($results);
+print_r($results->totalsForAllResults);
 
 
 
