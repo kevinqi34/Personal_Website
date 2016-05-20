@@ -253,6 +253,14 @@ div.port:hover div.text {
 
 }
 
+#about h3 img {
+  height: 25px;
+  width: 25px;
+
+
+
+}
+
 #about div.bio {
   width: 290px;
   height: auto;
