@@ -46,12 +46,11 @@ $.ajax({
         // create chart
 
         var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Work',     11],
-          ['Eat',      2],
-          ['Commute',  2],
-          ['Watch TV', 2],
-          ['Sleep',    7]
+          ['Property', 'Active Users'],
+          ['Ap Calculator',     msg[0]],
+          ['Spere',      msg[1]],
+          ['Flashpilot',  msg[2]],
+          ['Gamez4school', msg[3]]
         ]);
 
 
