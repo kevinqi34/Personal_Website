@@ -73,7 +73,7 @@ try {
 }
 
 
-echo $results->metrics;
+print_r($results);
 
 
 
