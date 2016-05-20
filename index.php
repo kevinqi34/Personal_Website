@@ -119,7 +119,7 @@ Have skills? Contact ME!
 <h3>Bio</h2>
 <div class="bio"><?php include './php/bio.php' ?></div>
 
-<h3>Realtime Stats</h3>
+<h3>Real-time Stats</h3>
 <div id="realtime">
 <p>Active Users: <span id="activeUsers"></span></p>
 
