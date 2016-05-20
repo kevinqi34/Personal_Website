@@ -73,8 +73,9 @@ try {
 }
 
 
-print_r($results->totalsForAllResults);
+$results = $results->totalsForAllResults;
+$realtime = $results['rt:activeUsers'];
 
-
+echo $realtime;
 
 ?>
