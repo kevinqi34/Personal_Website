@@ -70,7 +70,7 @@ foreach ($views as $view) {
 
   try {
     $results[] = $analytics->data_realtime->get(
-        'ga:100743134',
+        $view,
         'rt:activeUsers',
         $optParams);
   } catch (apiServiceException $e) {
