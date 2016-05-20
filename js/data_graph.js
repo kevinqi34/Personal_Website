@@ -47,10 +47,10 @@ $.ajax({
 
         var data = google.visualization.arrayToDataTable([
           ['Property', 'Active Users'],
-          ['Ap Calculator',     msg[0]],
-          ['Spere',      msg[1]],
-          ['Flashpilot',  msg[2]],
-          ['Gamez4school', msg[3]]
+          ['Ap Calculator',     parseInt(msg[0])],
+          ['Spere',     parseInt(msg[1])],
+          ['Flashpilot',  parseInt(msg[2])],
+          ['Gamez4school', parseInt(msg[3])]
         ]);
 
 
