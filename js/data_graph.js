@@ -95,7 +95,7 @@ function refresh() {
      url: "../php/get_analytics_data.php",
      success: function(data) {
        console.log(data);
-    
+       createGraph("data_chart");
 
      }
     });
