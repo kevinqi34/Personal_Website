@@ -42,17 +42,6 @@ Have skills? Contact ME!
   <!-- Visualization Library -->
   <script src="./js/dygraph-combined.js"></script>
 
-  <!-- Embed Real-time Analytics -->
-  <script>
-    (function(w,d,s,g,js,fs){
-      g=w.gapi||(w.gapi={});g.analytics={q:[],ready:function(f){this.q.push(f);}};
-      js=d.createElement(s);fs=d.getElementsByTagName(s)[0];
-      js.src='https://apis.google.com/js/platform.js';
-      fs.parentNode.insertBefore(js,fs);js.onload=function(){g.load('analytics');};
-    }(window,document,'script'));
-  </script>
-  <script src="./js/active-users.js"></script>
-
   <!-- Other Stuff -->
   <script src="./js/data_graph.js"></script>
   <script src="./js/initfunc.js"></script>
@@ -123,8 +112,6 @@ Have skills? Contact ME!
 
 <div id="about">
 
-<div id="authorize"></div>
-<div id="real-time"></div>
 
 <img title="Me" src="./pics/me.jpg" />
 
