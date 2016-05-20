@@ -116,13 +116,12 @@ Have skills? Contact ME!
 <img title="Me" src="./pics/me.jpg" />
 
 <h3>Bio</h2>
-<div class="bio">
+<div class="bio"><?php include './php/bio.php' ?></div>
 
-<?php include './php/bio.php' ?>
+<h3>Realtime Stats</h3>
+<div id="realtime">
 
 </div>
-
-
 
 
 <h3>Past 60 Days</h2>
