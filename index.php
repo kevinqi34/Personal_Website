@@ -51,7 +51,7 @@ Have skills? Contact ME!
       fs.parentNode.insertBefore(js,fs);js.onload=function(){g.load('analytics');};
     }(window,document,'script'));
   </script>
-  <script src="/public/javascript/embed-api/components/active-users.js"></script>
+  <script src="./js/active-users.js"></script>
 
   <!-- Other Stuff -->
   <script src="./js/data_graph.js"></script>
@@ -124,7 +124,7 @@ Have skills? Contact ME!
 <div id="about">
 
 <div id="authorize"></div>
-<div id="real-time"></div>  
+<div id="real-time"></div>
 
 <img title="Me" src="./pics/me.jpg" />
 

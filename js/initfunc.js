@@ -27,7 +27,7 @@ function resizeGraphs() {
 
 var w = (window.innerWidth);
 
-  console.log(w);
+
 
   if (w <= 1020) {
     $('#data_chart').css("width","320px");
