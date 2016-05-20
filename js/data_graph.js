@@ -51,10 +51,14 @@ $.ajax({
           ['Gamez4school', parseInt(msg[3])]
         ]);
 
+        var options = {
+            legend: 'none'
+          };
+
 
         var chart = new google.visualization.PieChart(document.getElementById('pie_chart_data'));
 
-        chart.draw(data);
+        chart.draw(data, options);
 
 
 
