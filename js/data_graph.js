@@ -25,3 +25,27 @@ function createGraph (input) {
 
 
 }
+
+
+function realTime() {
+
+  gapi.analytics.ready(function() {
+
+
+    gapi.analytics.auth.authorize({
+      container: 'authorize',
+      clientid: '100743134'
+    });
+
+
+
+    var activeUsers = new gapi.analytics.ext.ActiveUsers({
+      container: 'real-time',
+      pollingInterval: 5
+    });
+
+
+  }
+
+
+}
