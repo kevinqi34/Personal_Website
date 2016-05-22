@@ -41,7 +41,7 @@ function get_data() {
 
           var data = google.visualization.arrayToDataTable([
             ['Property', 'Active Users'],
-            ['Ap Calculator',     parseInt(msg[0])],
+            ['AP Calculator',     parseInt(msg[0])],
             ['Spere',     parseInt(msg[1])],
             ['Flashpilot',  parseInt(msg[2])],
             ['Gamez4school', parseInt(msg[3])]
@@ -82,15 +82,15 @@ function get_data() {
 function realtime_Stream () {
   google.charts.load('current', {'packages':['corechart']});
 
-get_data();
+  get_data();
 
-window.setInterval(function(){
+  window.setInterval(function(){
 
-// Get data
-get_data();
+  // Get data
+  get_data();
 
 
-},7000);
+  },7000);
 
 
 
