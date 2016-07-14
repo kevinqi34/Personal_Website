@@ -21,8 +21,7 @@ $info = array(
                  <p>Built in a week from scratch with PHP and a custom CSS/JS Front-End Framework.</p>"
    ),
    2 => array(
-<<<<<<< HEAD
-=======
+
      'Name' => 'Flash Pilot',
      'Pic' => './pics/flashpilot.png',
      'Link' => 'http://www.flashpilot.net',
@@ -31,7 +30,7 @@ $info = array(
                <p>It is a PHP driven gaming portal that I plan on renovating and using as a launchpad to promote my own brand of mobile games, as soon as I have time to build them.</p>'
    ),
    3 => array(
->>>>>>> eb1691f470d5681eedb569b051223313d0e6ece6
+
      'Name' => "Mike&E's",
      'Pic' => './pics/mike.png',
      'Link' => 'http://www.mikeandes.com',
