@@ -21,33 +21,12 @@ $info = array(
                  <p>Built in a week from scratch with PHP and a custom CSS/JS Front-End Framework.</p>"
    ),
    2 => array(
-     'Name' => 'Gamez4School',
-     'Pic' => './pics/gamez4school.png',
-     'Link' => 'https://sites.google.com/site/gamez4school/',
-     'Dis' => '<p><b>Gamez4School</b> is a gaming portal for kids who are bored at school and want to play flash games.</p>
-              <p>My first website ever, built back when I was a freshman in highschool because the school filter had blocked all online flash games.</p>
-              <p>Today, G4S is popular nationwide and is used by 200K kids each school year. Strangely, the website first got popular in Monroe, South Carolina.</p>
-              <p>Built with love and patience.</p>'
-
-   ),
-   3 => array(
-     'Name' => 'Flash Pilot',
-     'Pic' => './pics/flashpilot.png',
-     'Link' => 'http://www.flashpilot.net',
-     'Dis' => '<p><b>Flash Pilot</b> is a gaming portal I aquired a few months ago.</p>
-               <p>Since I was a kid, I have always dreamed of having a job that involves gaming, Flash Pilot is my oppurtunity.</p>
-               <p>It is a PHP driven gaming portal that I plan on renovating and using as a launchpad to promote my own brand of mobile games, as soon as I have time to build them.</p>'
-
-   ),
-   4 => array (
-      'Name' => "Mike&E's",
-      'Pic' => './pics/mike.png',
-      'Link' => 'http://www.mikeandes.com',
-      'Dis' => '<p>Created an online presence for a local 6 month old restaurant. Using Jekyll and SASS, I built a custom design with the goal of converting visitors to restaurant patrons.</p>
-                <p>Made with HTML and SCSS</p>'
-
-
-  )
+     'Name' => "Mike&E's",
+     'Pic' => './pics/mike.png',
+     'Link' => 'http://www.mikeandes.com',
+     'Dis' => '<p>Created an online presence for a local 6 month old restaurant. Using Jekyll and SASS, I built a custom design with the goal of converting visitors to restaurant patrons.</p>
+               <p>Made with HTML and SCSS</p>'
+   )
 );
 
 for ($i = 0; $i < count($info); $i++) {
