@@ -22,15 +22,6 @@ $info = array(
    ),
    2 => array(
 
-     'Name' => 'Flash Pilot',
-     'Pic' => './pics/flashpilot.png',
-     'Link' => 'http://www.flashpilot.net',
-     'Dis' => '<p><b>Flash Pilot</b> is a gaming portal I aquired a few months ago.</p>
-               <p>Since I was a kid, I have always dreamed of having a job that involves gaming, Flash Pilot is my oppurtunity.</p>
-               <p>It is a PHP driven gaming portal that I plan on renovating and using as a launchpad to promote my own brand of mobile games, as soon as I have time to build them.</p>'
-   ),
-   3 => array(
-
      'Name' => "Mike&E's",
      'Pic' => './pics/mike.png',
      'Link' => 'http://www.mikeandes.com',
