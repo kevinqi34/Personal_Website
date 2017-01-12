@@ -129,7 +129,7 @@ div.port {
 }
 
 div.port img {
-  width: 95%;
+  max-width: 95%;
   max-height: 95%;
   position: absolute;
   margin: auto;

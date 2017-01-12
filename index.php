@@ -39,12 +39,8 @@ Have skills? Contact ME!
   <script type="text/javascript" src="./js/jquery-1.11.2.js"></script>
   <script type="text/javascript" src="./js/jquery-ui.js"></script>
 
-  <!-- Visualization Library -->
-  <script src="./js/dygraph-combined.js"></script>
-  <script src="./js/google_charts.js"></script>
 
   <!-- Other Stuff -->
-  <script src="./js/data_graph.js"></script>
   <script src="./js/initfunc.js"></script>
   <script src="./js/driver.js"></script>
 
@@ -116,39 +112,10 @@ Have skills? Contact ME!
 
 <img title="Me" src="./pics/me.jpg" />
 
-<h3>Bio</h2>
-<div class="bio"><?php include './php/bio.php' ?></div>
-
-<h3>Real-time Stats</h3>
-<div id="realtime">
-<p>Active Users: <span id="activeUsers"></span></p>
-
-<div id="pie_chart_data"></div>
-
-</div>
-
-
-<h3>Past 60 Days<img title="Refresh" id="refresh" src="./pics/refresh.png" /></h2>
-
-
-<?php
-
-$myfile = fopen("./analytics_data_files/total_sum.txt", "r") or die("Unable to open file!");
-$hits = fread($myfile, filesize("./analytics_data_files/total_sum.txt"));
-fclose($myfile);
-
-
-?>
-
-
-<p>Total Views: <span><?php echo $hits ?></span></p>
-<div id="wrapper_chart">
-<div id="data_chart" style="width:800px; height:500px;"></div>
-</div>
-
-
-
-
+<h3>Bio</h3>
+<div class="bio"><?php include './php/bio.php'; ?></div>
+<h3>Skills</h3>
+<div class="bio"><?php include './php/skill.php'; ?></div>
 </div>
 
 

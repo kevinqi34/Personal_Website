@@ -24,19 +24,6 @@ $(document).ready( function() {
   redirect ('fb', 'https://www.facebook.com/kevin.qi.71', 'tab');
   redirect ('git', 'https://github.com/kevinqi34', 'tab');
 
-
- // create analytics
- realtime_Stream();
-
- $('#about_p').on("click",function(){
-   createGraph("data_chart");
-
- });
-
- refresh();
-
-
-
 });
 
 
