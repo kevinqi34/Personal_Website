@@ -39,7 +39,7 @@ $info = array(
    4 => array(
      'Name' => 'The Pod Drop',
      'Pic' => './pics/thepoddrop.png',
-     'Link' => 'http://ec2-52-90-65-6.compute-1.amazonaws.com',
+     'Link' => 'http://104.238.94.150:8080',
      'Dis' => "<p>Created a new website for the original iPhone repair company, The Pod Drop.</p><p>Using Jekyll, I built a mobile friendly website with the goal of showcasing the company's new custom printed phone case line.</p>
      <p>Made with HTML and SCSS</p>"
    ),
