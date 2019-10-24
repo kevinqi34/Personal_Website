@@ -13,7 +13,7 @@
 
 
 
-  $destination = "kevinqi34@gmail.com";
+  $destination = "kevinqi9889@gmail.com";
   $email = $_POST['Email'];
   $name = $_POST['Name'];
   $msg = $_POST['Content'];
