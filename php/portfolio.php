@@ -51,21 +51,6 @@ $info = array(
      <p>The app lets you find restaurants, hotels, atms and gas nearby within a set distance from your location all from a GM vehicle dashboard.</p>
      <p>Built with Google Location API and JS.</p>"
    ),
-   5 => array(
-  'Name' => 'The Pod Drop',
-  'Pic' => './pics/thepoddrop.png',
-  'Link' => 'http://kevinqi34.github.io/ThePodDrop/',
-  'Dis' => "<p>Created a new website for the original iPhone repair company, The Pod Drop.</p><p>Using Jekyll, I built a mobile friendly website with the goal of showcasing the company's new custom printed phone case line.</p>
-  <p>Made with HTML and SCSS</p>"
-  ),
-  6 => array(
-    'Name' => 'Gamez4School',
-    'Pic' => './pics/gamez4school.png',
-    'Link' => 'https://sites.google.com/site/gamez4school/',
-    'Dis' => "<p><b>Gamez4School</b> is an online flash games website for kids to play unblocked games at school.</p>
-    <p>Created in 2011, as a way to pass my time in my boring middle school classes. The site gets currently averages 200K visits annually.</p>
-    <p>Powered by Google Sites.</p>"
-  ),
 );
 
 for ($i = 0; $i < count($info); $i++) {
