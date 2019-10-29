@@ -14,20 +14,6 @@ $info = array(
                  <p>Built from scratch with PHP and a custom MVC framework.</p>"
    ),
    1 => array(
-       'Name' => 'Gadget Owl',
-       'Pic' => './pics/gadgetowl.png',
-       'Link' => 'https://github.com/kevinqi34/Spere_2017',
-       'Dis' => '<p><b>Gadget Owl</b> is an online shopping platform that simplifies
-                 the process of purchasing electronics.</p>
-                 <p>Using algorithms to summarize both technical attributes and
-                 consumer sentiment into one Spere Score,
-                 users are able to make accurate purchasing decisions without worry
-                 of getting an inferior product.</p>
-                 <p>After deciding on which product to buy, users are then able to
-                 track and compare prices from a limited selection of up to 5 trusted sellers.</p>
-                 <p>Spere is built from scratch with PHP and JS.</p>'
-   ),
-   2 => array(
 
      'Name' => "Mike&E's",
      'Pic' => './pics/mike.png',
@@ -35,7 +21,7 @@ $info = array(
      'Dis' => '<p>Created an online presence for a local 6 month old restaurant. Using Jekyll and SASS, I built a custom design with the goal of converting visitors to restaurant patrons.</p>
                <p>Made with HTML and SCSS</p>'
    ),
-   3 => array(
+   2 => array(
      'Name' => 'Sinoclean',
      'Pic' => './pics/sinoclean.png',
      'Link' => 'http://www.sinoclean.co/en',
@@ -43,7 +29,7 @@ $info = array(
      <p>Made with HTML and SCSS</p>'
 
    ),
-   4 => array(
+   3 => array(
      'Name' => 'GM Location Finder',
      'Pic' => './pics/mhacks8.png',
      'Link' => 'https://github.com/kevinqi34/Location-Finder-For-GM-Vehicles',
